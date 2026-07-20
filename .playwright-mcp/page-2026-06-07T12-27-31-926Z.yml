@@ -1,0 +1,249 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "DrivenByLight Home" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: Driven By Light
+      - navigation "Navigazione principale" [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Servizi" [ref=e8] [cursor=pointer]:
+          - /url: index.html#servizi
+        - link "Come Lavoriamo" [ref=e9] [cursor=pointer]:
+          - /url: index.html#come-lavoriamo
+        - link "Chi Sono" [ref=e10] [cursor=pointer]:
+          - /url: chi%20sono.html
+        - link "Gallery" [ref=e11] [cursor=pointer]:
+          - /url: gallery.html
+        - link "Contatti" [ref=e12] [cursor=pointer]:
+          - /url: contatti.html
+      - button "Cambia tema chiaro/scuro" [active] [ref=e13] [cursor=pointer]:
+        - img [ref=e206]
+  - main [ref=e20]:
+    - region "Hero pagina privacy policy" [ref=e21]:
+      - generic [ref=e24]:
+        - heading "Privacy Policy" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Informativa sulla privacy e gestione dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR).
+    - region [ref=e27]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - heading "1. Titolare del Trattamento" [level=3] [ref=e31]
+          - paragraph [ref=e32]:
+            - text: Tiziano Sapuppo — DrivenByLight
+            - text: "Indirizzo: Via G. Marconi, 5 — Comazzo (Lodi), Lombardia, Italia"
+            - text: "Email: tiziano.sapuppo@drivenbylight.it"
+        - generic [ref=e33]:
+          - heading "2. Dati Personali Trattati" [level=3] [ref=e34]
+          - paragraph [ref=e35]: "I dati personali che raccogliamo includono:"
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - strong [ref=e38]: "Dati di contatto:"
+              - text: nome, cognome, indirizzo email, numero di telefono.
+            - listitem [ref=e39]:
+              - strong [ref=e40]: "Dati di navigazione:"
+              - text: indirizzo IP, tipo di browser, sistema operativo, pagine visitate, durata della visita (raccolti tramite cookie tecnici e analytics).
+            - listitem [ref=e41]:
+              - strong [ref=e42]: "Dati comunicati volontariamente:"
+              - text: messaggi inviati tramite il modulo di contatto o WhatsApp.
+        - generic [ref=e43]:
+          - heading "3. Finalità del Trattamento e Base Giuridica" [level=3] [ref=e44]
+          - table "Tabella finalità di trattamento dati" [ref=e45]:
+            - rowgroup [ref=e46]:
+              - row "Finalità Base Giuridica Dati Trattati" [ref=e47]:
+                - columnheader "Finalità" [ref=e48]
+                - columnheader "Base Giuridica" [ref=e49]
+                - columnheader "Dati Trattati" [ref=e50]
+            - rowgroup [ref=e51]:
+              - row "Gestione richieste di informazioni e preventivi Esecuzione di misure precontrattuali (Art. 6.1.b GDPR) Nome, email, telefono, messaggio" [ref=e52]:
+                - cell "Gestione richieste di informazioni e preventivi" [ref=e53]
+                - cell "Esecuzione di misure precontrattuali (Art. 6.1.b GDPR)" [ref=e54]
+                - cell "Nome, email, telefono, messaggio" [ref=e55]
+              - row "Erogazione dei servizi richiesti Esecuzione contrattuale (Art. 6.1.b GDPR) Dati di contatto e progetto" [ref=e56]:
+                - cell "Erogazione dei servizi richiesti" [ref=e57]
+                - cell "Esecuzione contrattuale (Art. 6.1.b GDPR)" [ref=e58]
+                - cell "Dati di contatto e progetto" [ref=e59]
+              - row "Riskposta legale obbligatoria Obbligo legale (Art. 6.1.c GDPR) Dati di navigazione, dati contrattuali" [ref=e60]:
+                - cell "Riskposta legale obbligatoria" [ref=e61]
+                - cell "Obbligo legale (Art. 6.1.c GDPR)" [ref=e62]
+                - cell "Dati di navigazione, dati contrattuali" [ref=e63]
+              - row "Miglioramento del sito e analisi statistiche Interesse legittimo (Art. 6.1.f GDPR) Dati di navigazione anonimizzati" [ref=e64]:
+                - cell "Miglioramento del sito e analisi statistiche" [ref=e65]
+                - cell "Interesse legittimo (Art. 6.1.f GDPR)" [ref=e66]
+                - cell "Dati di navigazione anonimizzati" [ref=e67]
+              - row "Invio di materiale promozionale (solo con consenso) Consenso dell'interessato (Art. 6.1.a GDPR) Email, nome" [ref=e68]:
+                - cell "Invio di materiale promozionale (solo con consenso)" [ref=e69]
+                - cell "Consenso dell'interessato (Art. 6.1.a GDPR)" [ref=e70]
+                - cell "Email, nome" [ref=e71]
+        - generic [ref=e72]:
+          - heading "4. Misure di Sicurezza" [level=3] [ref=e73]
+          - paragraph [ref=e74]: "Il Titolare adotta adeguate misure tecniche e organizzative per proteggere i dati personali da accesso non autorizzato, alterazione, divulgazione o distruzione. In particolare:"
+          - list [ref=e75]:
+            - listitem [ref=e76]: Crittografia HTTPS/SSL su tutto il sito.
+            - listitem [ref=e77]: Accessi ai sistemi limitati al personale autorizzato.
+            - listitem [ref=e78]: Backup regolari dei dati.
+            - listitem [ref=e79]: Aggiornamento costante delle misure di sicurezza informatica.
+        - generic [ref=e80]:
+          - heading "5. Destinatari dei Dati" [level=3] [ref=e81]
+          - paragraph [ref=e82]: "I tuoi dati non saranno diffusi e non saranno oggetto di comunicazione su larga scala. Possono essere accessibili:"
+          - list [ref=e83]:
+            - listitem [ref=e84]:
+              - strong [ref=e85]: "Collaboratori del Titolare:"
+              - text: personale direttamente coinvolto nella gestione delle richieste e nell'erogazione dei servizi.
+            - listitem [ref=e86]:
+              - strong [ref=e87]: "Terce parti servizi:"
+              - text: fornitori di servizi tecnici (hosting, email, analytics) che trattano i dati esclusivamente per conto del Titolare, in qualità di Responsabili del Trattamento.
+        - generic [ref=e88]:
+          - heading "6. Trasferimento Dati Fuori dall'Unione Europea" [level=3] [ref=e89]
+          - paragraph [ref=e90]: I tuoi dati personali non saranno trasferiti al di fuori dell'Unione Europea o dello Spazio Economico Europeo, né saranno sottoposti a un meccanismo di trasferimento che comporti una protezione inferiore a quella garantita dal GDPR.
+        - generic [ref=e91]:
+          - heading "7. Periodo di Conservazione" [level=3] [ref=e92]
+          - paragraph [ref=e93]: "I dati personali saranno conservati per:"
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - strong [ref=e96]: "Dati di contatto (modulo form):"
+              - text: fino a 12 mesi dalla comunicazione, salvo obblighi legali superiori.
+            - listitem [ref=e97]:
+              - strong [ref=e98]: "Dati contrattuali:"
+              - text: per tutta la durata del rapporto e successivamente per il tempo previsto dai termini di prescrizione legale.
+            - listitem [ref=e99]:
+              - strong [ref=e100]: "Dati di navigazione (cookie):"
+              - text: secondo le impostazioni indicate nella Cookie Policy.
+            - listitem [ref=e101]:
+              - strong [ref=e102]: "Consenso marketing:"
+              - text: fino alla revoca da parte dell'interessato.
+        - generic [ref=e103]:
+          - heading "8. Diritti dell'Interessato" [level=3] [ref=e104]
+          - paragraph [ref=e105]: "Ai sensi degli Artt. 15-22 del GDPR, hai il diritto di:"
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - strong [ref=e108]: "Accesso:"
+              - text: ottenere la conferma dell'esistenza dei tuoi dati e una copia degli stessi.
+            - listitem [ref=e109]:
+              - strong [ref=e110]: "Rettificazione:"
+              - text: richiedere la correzione di dati inesatti o incompleti.
+            - listitem [ref=e111]:
+              - strong [ref=e112]: "Cancellazione:"
+              - text: richiedere la cancellazione dei tuoi dati ("diritto all'oblio").
+            - listitem [ref=e113]:
+              - strong [ref=e114]: "Limitazione:"
+              - text: richiedere la limitazione del trattamento nei casi previsti dalla legge.
+            - listitem [ref=e115]:
+              - strong [ref=e116]: "Portabilità:"
+              - text: ricevere i tuoi dati in un formato strutturato e leggibile da dispositivo automatico.
+            - listitem [ref=e117]:
+              - strong [ref=e118]: "Opposizione:"
+              - text: opporsi al trattamento dei tuoi dati per legittimi interessi.
+            - listitem [ref=e119]:
+              - strong [ref=e120]: "Revoca del consenso:"
+              - text: revocare il consenso in qualsiasi momento, senza pregiudicare la liceità del trattamento basato sul consenso previo.
+          - paragraph [ref=e121]:
+            - text: "Per esercitare i tuoi diritti, invia una richiesta a:"
+            - link "tiziano.sapuppo@drivenbylight.it" [ref=e122] [cursor=pointer]:
+              - /url: mailto:tiziano.sapuppo@drivenbylight.it
+            - text: . Hai inoltre il diritto di proporre reclamo al Garante per la Protezione dei Dati Personali (
+            - link "www.garanteprivacy.it" [ref=e123] [cursor=pointer]:
+              - /url: https://www.garanteprivacy.it
+            - text: ).
+        - generic [ref=e124]:
+          - heading "9. Cookie Policy" [level=3] [ref=e125]
+          - paragraph [ref=e126]: "Questo sito utilizza i seguenti tipi di cookie:"
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - strong [ref=e129]: "Cookie tecnici (necessari):"
+              - text: essenziali per il funzionamento del sito (es. memoria delle preferenze sui cookie). Non richiedono consenso.
+            - listitem [ref=e130]:
+              - strong [ref=e131]: "Cookie analitici:"
+              - text: raccolti in forma aggregata per statistiche d'uso interne. In questa versione del sito non sono utilizzati cookie analitici di terze parti.
+          - paragraph [ref=e132]: Il banner cookie all'ingresso del sito permette di accettare o rifiutare i cookie non essenziali. È possibile modificare le proprie preferenze in qualsiasi momento disinstallando i cookie dalle impostazioni del proprio browser.
+        - generic [ref=e133]:
+          - heading "10. Comunicazione tramite WhatsApp" [level=3] [ref=e134]
+          - paragraph [ref=e135]:
+            - text: "Il sito contiene un pulsante per contattare il Titolare tramite WhatsApp (servizio di Meta Platforms, Inc.). L'interazione con WhatsApp è regolata dalla privacy policy di Meta:"
+            - link "facebook.com/privacy" [ref=e136] [cursor=pointer]:
+              - /url: https://www.facebook.com/privacy/policy/
+            - text: .
+          - paragraph [ref=e137]: Le informazioni che condividi tramite WhatsApp sono soggette ai termini di servizio del piattaforma. Ti consigliamo di consultare l'informativa privacy di Meta prima di avviare una conversazione.
+        - generic [ref=e138]:
+          - heading "11. Modifiche alla Privacy Policy" [level=3] [ref=e139]
+          - paragraph [ref=e140]: Il Titolare si riserva il diritto di modificare la presente Privacy Policy in qualsiasi momento, per adeguarla a cambiamenti normativi, tecnici o organizzativi. Qualsiasi modifica sarà pubblicata su questa pagina con la data di ultima revisione. Ti invitiamo a consultare periodicamente questa informativa.
+        - generic [ref=e141]:
+          - heading "12. Contatti del Titolare" [level=3] [ref=e142]
+          - paragraph [ref=e143]: "Per qualsiasi domanda riguardante la presente Privacy Policy o il trattamento dei tuoi dati personali, puoi contattare:"
+          - paragraph [ref=e144]:
+            - strong [ref=e145]: Tiziano Sapuppo — DrivenByLight
+            - text: "Email:"
+            - link "tiziano.sapuppo@drivenbylight.it" [ref=e146] [cursor=pointer]:
+              - /url: mailto:tiziano.sapuppo@drivenbylight.it
+        - paragraph [ref=e147]: "Ultima revisione: Giugno 2026"
+  - contentinfo [ref=e148]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - heading "DrivenByLight" [level=3] [ref=e152]
+          - paragraph [ref=e153]: Fotografo e videomaker automotive professionale. Contenuti visivi cinematografici progettati per aumentare le vendite.
+          - generic [ref=e154]:
+            - link "Seguici su Instagram" [ref=e155] [cursor=pointer]:
+              - /url: https://www.instagram.com/drivenbylight.st/
+              - img [ref=e156]
+            - link "Guardaci su YouTube" [ref=e158] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UClWVBASXwJXdS4vKC0fwK6Q
+              - img [ref=e159]
+            - link "Connettiti su LinkedIn" [ref=e161] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/tiziano-sapuppo/
+              - img [ref=e162]
+        - generic [ref=e164]:
+          - heading "Link Rapidi" [level=3] [ref=e165]
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "Home" [ref=e168] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e169]:
+              - link "Servizi" [ref=e170] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e171]:
+              - link "Come Lavoriamo" [ref=e172] [cursor=pointer]:
+                - /url: index.html#come-lavoriamo
+            - listitem [ref=e173]:
+              - link "Chi Sono" [ref=e174] [cursor=pointer]:
+                - /url: chi%20sono.html
+            - listitem [ref=e175]:
+              - link "Gallery" [ref=e176] [cursor=pointer]:
+                - /url: gallery.html
+        - generic [ref=e177]:
+          - heading "Servizi" [level=3] [ref=e178]
+          - list [ref=e179]:
+            - listitem [ref=e180]:
+              - link "Aziende & Concessionarie" [ref=e181] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e182]:
+              - link "Shooting 1:1" [ref=e183] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e184]:
+              - link "Eventi in Pista" [ref=e185] [cursor=pointer]:
+                - /url: index.html#servizi
+        - generic [ref=e186]:
+          - heading "Contatti" [level=3] [ref=e187]
+          - list [ref=e188]:
+            - listitem [ref=e189]:
+              - link "tiziano.sapuppo@drivenbylight.it" [ref=e190] [cursor=pointer]:
+                - /url: mailto:tiziano.sapuppo@drivenbylight.it
+            - listitem [ref=e191]:
+              - link "+39 329 662 8640" [ref=e192] [cursor=pointer]:
+                - /url: tel:+393296628640
+            - listitem [ref=e193]:
+              - link "Modulo Contatti" [ref=e194] [cursor=pointer]:
+                - /url: contatti.html
+            - listitem [ref=e195]:
+              - link "Privacy Policy" [ref=e196] [cursor=pointer]:
+                - /url: privacy.html
+      - paragraph [ref=e198]: © 2026 DrivenByLight — Tiziano Sapuppo. Tutti i diritti riservati.
+  - dialog "Gestione cookie" [ref=e199]:
+    - generic [ref=e200]:
+      - paragraph [ref=e201]:
+        - text: Utilizziamo cookie tecnici necessari al funzionamento del sito. Per maggiori informazioni consulta la nostra
+        - link "Privacy Policy" [ref=e202] [cursor=pointer]:
+          - /url: privacy.html
+        - text: .
+      - generic [ref=e203]:
+        - button "Accetta tutti i cookie" [ref=e204] [cursor=pointer]: Accetto
+        - button "Rifiuta i cookie non essenziali" [ref=e205] [cursor=pointer]: Rifiuto

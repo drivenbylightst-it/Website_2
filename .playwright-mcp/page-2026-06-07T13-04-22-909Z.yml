@@ -1,0 +1,137 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "DrivenByLight Home" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: Driven By Light
+      - navigation "Navigazione principale" [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Servizi" [ref=e8] [cursor=pointer]:
+          - /url: index.html#servizi
+        - link "Come Lavoriamo" [ref=e9] [cursor=pointer]:
+          - /url: index.html#come-lavoriamo
+        - link "Chi Sono" [ref=e10] [cursor=pointer]:
+          - /url: chi%20sono.html
+        - link "Gallery" [ref=e11] [cursor=pointer]:
+          - /url: gallery.html
+        - link "Contatti" [ref=e12] [cursor=pointer]:
+          - /url: contatti.html
+      - button "Cambia tema chiaro/scuro" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+  - main [ref=e16]:
+    - region "Hero pagina gallery" [ref=e17]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - heading "La Mia Gallery" [level=1] [ref=e24]
+        - paragraph [ref=e25]: Ogni scatto racconta una storia. Scopri i nostri lavori di fotografia e videomaking automotive.
+    - region "I Miei Lavori" [ref=e26]:
+      - generic [ref=e27]:
+        - heading "I Miei Lavori" [level=2] [ref=e28]
+        - generic [ref=e29]:
+          - figure "Rolling Shot" [ref=e30] [cursor=pointer]:
+            - img "Shooting automotive professionale — DrivenByLight" [ref=e31]
+            - generic [ref=e33]: Rolling Shot
+          - figure "Detail Shot" [ref=e34] [cursor=pointer]:
+            - img "Fotografia dettaglio veicolo — DrivenByLight" [ref=e35]
+            - generic [ref=e37]: Detail Shot
+          - figure "Promo Video" [ref=e38] [cursor=pointer]:
+            - img "Video promozionale automotive — DrivenByLight" [ref=e39]
+            - generic [ref=e41]: Promo Video
+          - figure "In Movimento" [ref=e42] [cursor=pointer]:
+            - img "Shooting in movimento — DrivenByLight" [ref=e43]
+            - generic [ref=e45]: In Movimento
+          - figure "Concessionaria" [ref=e46] [cursor=pointer]:
+            - img "Contenuto visivo per concessionaria — DrivenByLight" [ref=e47]
+            - generic [ref=e49]: Concessionaria
+          - figure "Cinematic Grade" [ref=e50] [cursor=pointer]:
+            - img "Color grading cinematografico — DrivenByLight" [ref=e51]
+            - generic [ref=e53]: Cinematic Grade
+          - figure "Track Day" [ref=e54] [cursor=pointer]:
+            - img "Track day photography — DrivenByLight" [ref=e55]
+            - generic [ref=e57]: Track Day
+          - figure "Luxury Shoot" [ref=e58] [cursor=pointer]:
+            - img "Shooting luxury automotive — DrivenByLight" [ref=e59]
+            - generic [ref=e61]: Luxury Shoot
+          - figure "Social Content" [ref=e62] [cursor=pointer]:
+            - img "Contenuto social automotive — DrivenByLight" [ref=e63]
+            - generic [ref=e65]: Social Content
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: Ti piacciono i miei lavori? Immagina cosa possiamo creare per la tua attività.
+          - link "Richiedi un Preventivo →" [ref=e68] [cursor=pointer]:
+            - /url: contatti.html
+  - contentinfo [ref=e69]:
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - heading "DrivenByLight" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Fotografo e videomaker automotive professionale. Contenuti visivi cinematografici progettati per aumentare le vendite.
+          - generic [ref=e75]:
+            - link "Seguici su Instagram" [ref=e76] [cursor=pointer]:
+              - /url: https://www.instagram.com/drivenbylight.st/
+              - img [ref=e77]
+            - link "Guardaci su YouTube" [ref=e79] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UClWVBASXwJXdS4vKC0fwK6Q
+              - img [ref=e80]
+            - link "Connettiti su LinkedIn" [ref=e82] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/tiziano-sapuppo/
+              - img [ref=e83]
+        - generic [ref=e85]:
+          - heading "Link Rapidi" [level=3] [ref=e86]
+          - list [ref=e87]:
+            - listitem [ref=e88]:
+              - link "Home" [ref=e89] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e90]:
+              - link "Servizi" [ref=e91] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e92]:
+              - link "Come Lavoriamo" [ref=e93] [cursor=pointer]:
+                - /url: index.html#come-lavoriamo
+            - listitem [ref=e94]:
+              - link "Chi Sono" [ref=e95] [cursor=pointer]:
+                - /url: chi%20sono.html
+            - listitem [ref=e96]:
+              - link "Gallery" [ref=e97] [cursor=pointer]:
+                - /url: gallery.html
+        - generic [ref=e98]:
+          - heading "Servizi" [level=3] [ref=e99]
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "Aziende & Concessionarie" [ref=e102] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e103]:
+              - link "Shooting 1:1" [ref=e104] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e105]:
+              - link "Eventi in Pista" [ref=e106] [cursor=pointer]:
+                - /url: index.html#servizi
+        - generic [ref=e107]:
+          - heading "Contatti" [level=3] [ref=e108]
+          - list [ref=e109]:
+            - listitem [ref=e110]:
+              - link "tiziano.sapuppo@drivenbylight.it" [ref=e111] [cursor=pointer]:
+                - /url: mailto:tiziano.sapuppo@drivenbylight.it
+            - listitem [ref=e112]:
+              - link "+39 329 662 8640" [ref=e113] [cursor=pointer]:
+                - /url: tel:+393296628640
+            - listitem [ref=e114]:
+              - link "Modulo Contatti" [ref=e115] [cursor=pointer]:
+                - /url: contatti.html
+            - listitem [ref=e116]:
+              - link "Privacy Policy" [ref=e117] [cursor=pointer]:
+                - /url: privacy.html
+      - paragraph [ref=e119]: © 2026 DrivenByLight — Tiziano Sapuppo. Tutti i diritti riservati.
+  - link "Contattaci su WhatsApp" [ref=e120] [cursor=pointer]:
+    - /url: https://wa.me/393296628640?text=Ciao%20Tiziano,%20vorrei%20informazioni%20sui%20vostri%20servizi.
+    - img [ref=e121]
+  - dialog "Gestione cookie" [ref=e123]:
+    - generic [ref=e124]:
+      - paragraph [ref=e125]:
+        - text: Utilizziamo cookie tecnici necessari al funzionamento del sito. Per maggiori informazioni consulta la nostra
+        - link "Privacy Policy" [ref=e126] [cursor=pointer]:
+          - /url: privacy.html
+        - text: .
+      - generic [ref=e127]:
+        - button "Accetta tutti i cookie" [ref=e128] [cursor=pointer]: Accetto
+        - button "Rifiuta i cookie non essenziali" [ref=e129] [cursor=pointer]: Rifiuto

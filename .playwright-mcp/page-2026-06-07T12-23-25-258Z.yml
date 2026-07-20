@@ -1,0 +1,263 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "DrivenByLight Home" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: Driven By Light
+      - navigation "Navigazione principale" [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Servizi" [ref=e8] [cursor=pointer]:
+          - /url: "#servizi"
+        - link "Come Lavoriamo" [ref=e9] [cursor=pointer]:
+          - /url: "#come-lavoriamo"
+        - link "Chi Sono" [ref=e10] [cursor=pointer]:
+          - /url: "#chi-sono-home"
+        - link "Gallery" [ref=e11] [cursor=pointer]:
+          - /url: gallery.html
+        - link "Contatti" [ref=e12] [cursor=pointer]:
+          - /url: contatti.html
+      - button "Cambia tema chiaro/scuro" [active] [ref=e13] [cursor=pointer]:
+        - img [ref=e277]
+  - main [ref=e20]:
+    - region "Hero principale" [ref=e21]:
+      - img "Auto fotografata da DrivenByLight" [ref=e22]
+      - generic [ref=e24]:
+        - heading "Contenuti Visual che Aumentano le Vendite" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Fotografia e videomaking automotive professionale. Shooting su misura per concessionarie, luxury rent e brand del settore.
+        - generic [ref=e27]:
+          - link "Richiedi un Preventivo" [ref=e28] [cursor=pointer]:
+            - /url: contatti.html
+          - link "Scopri i Servizi" [ref=e29] [cursor=pointer]:
+            - /url: "#servizi"
+    - region [ref=e30]:
+      - generic [ref=e31]:
+        - heading "I Nostri Servizi" [level=2] [ref=e32]
+        - paragraph [ref=e33]: Soluzioni visive professionali pensate per il settore automotive. Ogni progetto è unico, ogni dettaglio è curato.
+        - generic [ref=e34]:
+          - article [ref=e35]:
+            - img "Contenuti fotografici per concessionarie automotive" [ref=e36]
+            - generic [ref=e37]:
+              - heading "Aziende & Concessionarie" [level=3] [ref=e38]
+              - paragraph [ref=e39]: Contenuti foto e video per concessionarie, noleggiatori, detailing e brand automotive. Contenuti progettati per aumentare le vendite e migliorare la tua presenza online.
+          - article [ref=e40]:
+            - img "Shooting fotografico singolo veicolo automotive" [ref=e41]
+            - generic [ref=e42]:
+              - heading "Shooting 1:1" [level=3] [ref=e43]
+              - paragraph [ref=e44]: Shooting dedicati a singoli veicoli o progetti speciali. Ogni auto viene valorizzata con luce studiata, composizione cinematografica e color grading personalizzato. Nessun preset, tutto su misura.
+          - article [ref=e45]:
+            - img "Fotografia eventi automotive in pista" [ref=e46]
+            - generic [ref=e47]:
+              - heading "Eventi in Pista" [level=3] [ref=e48]
+              - paragraph [ref=e49]: Track day e sessioni dinamiche raccontate con scatti e video ad alto impatto. Catturiamo velocità, dettagli e atmosfera senza interrompere il flusso dell'evento.
+    - region [ref=e50]:
+      - generic [ref=e51]:
+        - heading "Come Lavoriamo" [level=2] [ref=e52]
+        - paragraph [ref=e53]: Un processo semplice e trasparente, dalla prima chiamata alla consegna finale.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: "1"
+            - heading "Contatto" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Forniscimi i dettagli e le tue esigenze. Preparo un piano di lavoro personalizzato per il tuo progetto.
+          - generic [ref=e59]:
+            - generic [ref=e60]: "2"
+            - heading "Pianificazione" [level=3] [ref=e61]
+            - paragraph [ref=e62]: Scegliamo insieme luogo, stile e inquadrature. Guida rapida per preparare la sessione al meglio.
+          - generic [ref=e63]:
+            - generic [ref=e64]: "3"
+            - heading "Giorno dello Shooting" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Preparazione attrezzatura e luogo. Posizionamento del veicolo come pianificato, zero stress per te.
+          - generic [ref=e67]:
+            - generic [ref=e68]: "4"
+            - heading "Post-Produzione" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Editing e correzioni professionali per ottenere immagini di alta qualità, pronte per l'uso.
+          - generic [ref=e71]:
+            - generic [ref=e72]: "5"
+            - heading "Consegna" [level=3] [ref=e73]
+            - paragraph [ref=e74]: File in formato pronto per campagna di marketing e social. Veloci, efficienti, impattanti.
+    - region [ref=e75]:
+      - generic [ref=e76]:
+        - heading "Perché Scegliermi" [level=2] [ref=e77]
+        - paragraph [ref=e78]: Non realizzo shooting casuali. Costruisco un sistema visivo pensato per ridurre il tempo medio di vendita.
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - img [ref=e81]
+            - heading "Zero Preset, Zero Standard" [level=3] [ref=e84]
+            - paragraph [ref=e85]: Nessuna soluzione preconfezionata. Ogni progetto è studiato su misura per valorizzare l'identità del tuo veicolo e del tuo brand.
+          - generic [ref=e86]:
+            - img [ref=e87]
+            - heading "Risultati Misurabili" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Contenuti progettati per convertire. Il mio obiettivo è ridurre il tempo medio di vendita della tua concessionaria.
+          - generic [ref=e92]:
+            - img [ref=e93]
+            - heading "Approccio Cinematografico" [level=3] [ref=e97]
+            - paragraph [ref=e98]: Luce studiata, composizione cinematografica, color grading personalizzato. Rolling shots e slow motion per un impatto visivo unico.
+          - generic [ref=e99]:
+            - img [ref=e100]
+            - heading "Zero Complicazioni" [level=3] [ref=e105]
+            - paragraph [ref=e106]: "Seguo ogni progetto in prima persona: pianificazione, shooting e post-produzione. Tu ti godi l'auto, io mi occupo del resto."
+        - link "Scopri la Mia Storia →" [ref=e108] [cursor=pointer]:
+          - /url: chi%20sono.html
+    - region "Statistiche" [ref=e109]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - generic "Oltre 150 progetti completati" [ref=e113]: 0+
+          - paragraph [ref=e114]: Progetti Completati
+        - generic [ref=e115]:
+          - generic "Oltre 50 clienti soddisfatti" [ref=e116]: 0+
+          - paragraph [ref=e117]: Clienti Soddisfatti
+        - generic [ref=e118]:
+          - generic "Anni di esperienza nel lavoro" [ref=e119]: 0+
+          - paragraph [ref=e120]: Anni di Esperienza
+        - generic [ref=e121]:
+          - generic "100 percentuale dedizione ad ogni progetto" [ref=e122]: 0+
+          - paragraph [ref=e123]: "% Dedicato a Ogni Progetto"
+    - region [ref=e124]:
+      - generic [ref=e125]:
+        - heading "Domande Frequenti" [level=2] [ref=e126]
+        - paragraph [ref=e127]: Le risposte alle domande più comuni sui nostri servizi.
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - button "Quanto tempo ci vuole per ricevere i materiali?" [ref=e130] [cursor=pointer]:
+              - generic [ref=e131]: Quanto tempo ci vuole per ricevere i materiali?
+              - img [ref=e132]
+            - region:
+              - generic [ref=e134]: Dipende dalla complessità del progetto. In genere, per uno shooting fotografico standard i materiali vengono consegnati entro 5-7 giorni lavorativi. Per progetti video o combinazioni foto+video, il tempo è di 10-14 giorni lavorativi.
+          - generic [ref=e135]:
+            - button "Lavorate solo a Milano?" [ref=e136] [cursor=pointer]:
+              - generic [ref=e137]: Lavorate solo a Milano?
+              - img [ref=e138]
+            - region:
+              - generic [ref=e140]: La mia base è a Comazzo (Lodi), ma lavoro in tutta la Lombardia e sono disponibile per progetti in tutta Italia. Per location fuori regione, contattami per valutare insieme le opzioni.
+          - generic [ref=e141]:
+            - button "Come funziona il preventivo?" [ref=e142] [cursor=pointer]:
+              - generic [ref=e143]: Come funziona il preventivo?
+              - img [ref=e144]
+            - region:
+              - generic [ref=e146]: Ogni progetto è diverso, per questo non ho pacchetti preconfezionati. Mi contatti con le tue esigenze, preparo un piano personalizzato e ti invio un preventivo dettagliato senza impegno. La prima consulenza è sempre gratuita.
+          - generic [ref=e147]:
+            - button "Posso vedere un esempio di lavoro?" [ref=e148] [cursor=pointer]:
+              - generic [ref=e149]: Posso vedere un esempio di lavoro?
+              - img [ref=e150]
+            - region:
+              - generic [ref=e152]: Certo! Puoi esplorare la nostra gallery su questa pagina o visitare i nostri canali social (Instagram, YouTube) per vedere il lavoro più recente. Sono sempre disponibile a mostrare portfolio personalizzato durante un incontro.
+          - generic [ref=e153]:
+            - button "Offrite servizi di video oltre che foto?" [ref=e154] [cursor=pointer]:
+              - generic [ref=e155]: Offrite servizi di video oltre che foto?
+              - img [ref=e156]
+            - region:
+              - generic [ref=e158]: Assolutamente sì. Realizzo sia fotografia che videomaking automotive, inclusi rolling shots, video promozionali, contenuti per social media e riprese in pista. Ogni progetto può includere una combinazione di foto e video.
+    - region [ref=e159]:
+      - generic [ref=e160]:
+        - heading "Cosa Dicono i Clienti" [level=2] [ref=e161]
+        - paragraph [ref=e162]: La soddisfazione dei clienti è il mio miglior biglietto da visita.
+        - generic [ref=e163]:
+          - article "Recensione di Giambra Giulia" [ref=e164]:
+            - generic "5 stelle su 5" [ref=e165]:
+              - img [ref=e166]
+              - img [ref=e168]
+              - img [ref=e170]
+              - img [ref=e172]
+              - img [ref=e174]
+            - paragraph [ref=e176]: "\"Cercavo qualcuno che sapesse valorizzare davvero la mia auto, non solo scattare due foto al volo. Tiziano ha curato luci, angoli e movimento con una precisione assurda. Shooting rapido, zero stress e qualità altissima. Consigliatissimo!\""
+            - generic [ref=e178]: Giambra Giulia
+          - article "Recensione di Marco R. - Concessionario" [ref=e179]:
+            - generic "5 stelle su 5" [ref=e180]:
+              - img [ref=e181]
+              - img [ref=e183]
+              - img [ref=e185]
+              - img [ref=e187]
+              - img [ref=e189]
+            - paragraph [ref=e191]: "\"Abbiamo collaborato per il rinnovamento del nostro portfolio online e i risultati sono stati immediati: le visite al sito sono aumentate del 40% nel primo mese. Professionalità e creatività al servizio dei numeri.\""
+            - generic [ref=e193]: Marco R. — Concessionario
+          - article "Recensione di Luca B. - Appassionato automotive" [ref=e194]:
+            - generic "5 stelle su 5" [ref=e195]:
+              - img [ref=e196]
+              - img [ref=e198]
+              - img [ref=e200]
+              - img [ref=e202]
+              - img [ref=e204]
+            - paragraph [ref=e206]: "\"Ho chiesto un video per la mia vettura e il risultato è stato incredibile. Tiziano ha catturato l'anima dell'auto in modo che non avrei mai immaginato. Un vero artista del settore automotive.\""
+            - generic [ref=e208]: Luca B. — Appassionato Automotive
+    - region "Call to action finale" [ref=e209]:
+      - img "Background call to action" [ref=e210]
+      - generic [ref=e212]:
+        - heading "Pronto a Valorizzare il Tuo Veicolo?" [level=2] [ref=e213]
+        - paragraph [ref=e214]: Contattami oggi per una consulenza gratuita. Insieme creeremo contenuti visivi che faranno la differenza per il tuo business.
+        - link "Scrivimi Ora →" [ref=e215] [cursor=pointer]:
+          - /url: contatti.html
+  - contentinfo [ref=e216]:
+    - generic [ref=e217]:
+      - generic [ref=e218]:
+        - generic [ref=e219]:
+          - heading "DrivenByLight" [level=3] [ref=e220]
+          - paragraph [ref=e221]: Fotografo e videomaker automotive professionale. Contenuti visivi cinematografici progettati per aumentare le vendite.
+          - generic [ref=e222]:
+            - link "Seguici su Instagram" [ref=e223] [cursor=pointer]:
+              - /url: https://www.instagram.com/drivenbylight.st/
+              - img [ref=e224]
+            - link "Guardaci su YouTube" [ref=e226] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UClWVBASXwJXdS4vKC0fwK6Q
+              - img [ref=e227]
+            - link "Connettiti su LinkedIn" [ref=e229] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/tiziano-sapuppo/
+              - img [ref=e230]
+        - generic [ref=e232]:
+          - heading "Link Rapidi" [level=3] [ref=e233]
+          - list [ref=e234]:
+            - listitem [ref=e235]:
+              - link "Home" [ref=e236] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e237]:
+              - link "Servizi" [ref=e238] [cursor=pointer]:
+                - /url: "#servizi"
+            - listitem [ref=e239]:
+              - link "Come Lavoriamo" [ref=e240] [cursor=pointer]:
+                - /url: "#come-lavoriamo"
+            - listitem [ref=e241]:
+              - link "Chi Sono" [ref=e242] [cursor=pointer]:
+                - /url: chi%20sono.html
+            - listitem [ref=e243]:
+              - link "Gallery" [ref=e244] [cursor=pointer]:
+                - /url: gallery.html
+        - generic [ref=e245]:
+          - heading "Servizi" [level=3] [ref=e246]
+          - list [ref=e247]:
+            - listitem [ref=e248]:
+              - link "Aziende & Concessionarie" [ref=e249] [cursor=pointer]:
+                - /url: "#servizi"
+            - listitem [ref=e250]:
+              - link "Shooting 1:1" [ref=e251] [cursor=pointer]:
+                - /url: "#servizi"
+            - listitem [ref=e252]:
+              - link "Eventi in Pista" [ref=e253] [cursor=pointer]:
+                - /url: "#servizi"
+        - generic [ref=e254]:
+          - heading "Contatti" [level=3] [ref=e255]
+          - list [ref=e256]:
+            - listitem [ref=e257]:
+              - link "tiziano.sapuppo@drivenbylight.it" [ref=e258] [cursor=pointer]:
+                - /url: mailto:tiziano.sapuppo@drivenbylight.it
+            - listitem [ref=e259]:
+              - link "+39 329 662 8640" [ref=e260] [cursor=pointer]:
+                - /url: tel:+393296628640
+            - listitem [ref=e261]:
+              - link "Modulo Contatti" [ref=e262] [cursor=pointer]:
+                - /url: contatti.html
+            - listitem [ref=e263]:
+              - link "Privacy Policy" [ref=e264] [cursor=pointer]:
+                - /url: privacy.html
+      - paragraph [ref=e266]: © 2026 DrivenByLight — Tiziano Sapuppo. Tutti i diritti riservati.
+  - link "Contattaci su WhatsApp" [ref=e267] [cursor=pointer]:
+    - /url: https://wa.me/393296628640?text=Ciao%20Tiziano,%20vorrei%20informazioni%20sui%20vostri%20servizi.
+    - img [ref=e268]
+  - dialog "Gestione cookie" [ref=e270]:
+    - generic [ref=e271]:
+      - paragraph [ref=e272]:
+        - text: Utilizziamo cookie tecnici necessari al funzionamento del sito. Per maggiori informazioni consulta la nostra
+        - link "Privacy Policy" [ref=e273] [cursor=pointer]:
+          - /url: privacy.html
+        - text: .
+      - generic [ref=e274]:
+        - button "Accetta tutti i cookie" [ref=e275] [cursor=pointer]: Accetto
+        - button "Rifiuta i cookie non essenziali" [ref=e276] [cursor=pointer]: Rifiuto

@@ -1,0 +1,163 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "DrivenByLight Home" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "DrivenByLight — Logo Tiziano Sapuppo Fotografo Automotive" [ref=e5]
+        - generic [ref=e6]: Driven By Light
+      - navigation "Navigazione principale" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: index.html
+        - link "Servizi" [ref=e9] [cursor=pointer]:
+          - /url: index.html#servizi
+        - link "Come Lavoriamo" [ref=e10] [cursor=pointer]:
+          - /url: index.html#come-lavoriamo
+        - link "Chi Sono" [ref=e11] [cursor=pointer]:
+          - /url: chi%20sono.html
+        - link "Gallery" [ref=e12] [cursor=pointer]:
+          - /url: gallery.html
+        - link "Contatti" [ref=e13] [cursor=pointer]:
+          - /url: contatti.html
+      - button "Cambia tema chiaro/scuro" [ref=e14] [cursor=pointer]
+  - main [ref=e21]:
+    - region "Hero pagina gallery" [ref=e22]:
+      - generic [ref=e25]:
+        - heading "La Mia Gallery" [level=1] [ref=e29]
+        - paragraph [ref=e30]: Ogni scatto racconta una storia. Scopri i nostri lavori di fotografia e videomaking automotive.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - heading "AUDI A4 Competition Plus" [level=3] [ref=e35]
+          - generic [ref=e36]:
+            - figure [ref=e37] [cursor=pointer]:
+              - img "Audi A4 Competition Plus — Shooting professionale DrivenByLight" [ref=e38]
+            - figure [ref=e39] [cursor=pointer]:
+              - img "Audi A4 Competition Plus — Dettaglio interni DrivenByLight" [ref=e40]
+            - figure [ref=e41] [cursor=pointer]:
+              - img "Audi A4 Competition Plus — Dettaglio cerchi DrivenByLight" [ref=e42]
+            - figure [ref=e43] [cursor=pointer]:
+              - img "Audi A4 Competition Plus — Frontale DrivenByLight" [ref=e44]
+            - figure [ref=e45] [cursor=pointer]:
+              - img "Audi A4 Competition Plus — Posteriore DrivenByLight" [ref=e46]
+            - figure [ref=e47] [cursor=pointer]:
+              - img "Audi A4 Competition Plus — Action shot DrivenByLight" [ref=e48]
+        - generic [ref=e49]:
+          - heading "AUDI RS3" [level=3] [ref=e50]
+          - generic [ref=e51]:
+            - figure [ref=e52] [cursor=pointer]:
+              - img "Audi RS3 — Shooting professionale DrivenByLight" [ref=e53]
+            - figure [ref=e54] [cursor=pointer]:
+              - img "Audi RS3 — Dettaglio interni DrivenByLight" [ref=e55]
+            - figure [ref=e56] [cursor=pointer]:
+              - img "Audi RS3 — Dettaglio motori DrivenByLight" [ref=e57]
+            - figure [ref=e58] [cursor=pointer]:
+              - img "Audi RS3 — Frontale aggressivo DrivenByLight" [ref=e59]
+            - figure [ref=e60] [cursor=pointer]:
+              - img "Audi RS3 — Profilo laterale DrivenByLight" [ref=e61]
+            - figure [ref=e62] [cursor=pointer]:
+              - img "Audi RS3 — Action shot in movimento DrivenByLight" [ref=e63]
+        - generic [ref=e64]:
+          - heading "FERRARI CALIFORNIA T" [level=3] [ref=e65]
+          - generic [ref=e66]:
+            - figure [ref=e67] [cursor=pointer]:
+              - img "Ferrari California — Shooting professionale DrivenByLight" [ref=e68]
+            - figure [ref=e69] [cursor=pointer]:
+              - img "Ferrari California — Dettaglio interni lusso DrivenByLight" [ref=e70]
+            - figure [ref=e71] [cursor=pointer]:
+              - img "Ferrari California — Dettaglio logo DrivenByLight" [ref=e72]
+            - figure [ref=e73] [cursor=pointer]:
+              - img "Ferrari California — Frontale iconico DrivenByLight" [ref=e74]
+            - figure [ref=e75] [cursor=pointer]:
+              - img "Ferrari California — Tetto apribile DrivenByLight" [ref=e76]
+            - figure [ref=e77] [cursor=pointer]:
+              - img "Ferrari California — Action shot al tramonto DrivenByLight" [ref=e78]
+        - generic [ref=e79]:
+          - heading "PORSCHE CAYMAN" [level=3] [ref=e80]
+          - generic [ref=e81]:
+            - figure [ref=e82] [cursor=pointer]:
+              - img "Porsche Cayman — Shooting professionale DrivenByLight" [ref=e83]
+            - figure [ref=e84] [cursor=pointer]:
+              - img "Porsche Cayman — Dettaglio interni DrivenByLight" [ref=e85]
+            - figure [ref=e86] [cursor=pointer]:
+              - img "Porsche Cayman — Dettaglio fari DrivenByLight" [ref=e87]
+            - figure [ref=e88] [cursor=pointer]:
+              - img "Porsche Cayman — Frontale sportivo DrivenByLight" [ref=e89]
+            - figure [ref=e90] [cursor=pointer]:
+              - img "Porsche Cayman — Linea laterale DrivenByLight" [ref=e91]
+            - figure [ref=e92] [cursor=pointer]:
+              - img "Porsche Cayman — Action shot in pista DrivenByLight" [ref=e93]
+      - generic [ref=e94]:
+        - paragraph [ref=e95]: Ti piacciono i miei lavori? Immagina cosa possiamo creare per la tua attività.
+        - link "Richiedi un Preventivo →" [ref=e96] [cursor=pointer]:
+          - /url: contatti.html
+  - contentinfo [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - heading "DrivenByLight" [level=3] [ref=e101]
+          - paragraph [ref=e102]: Fotografo e videomaker automotive professionale. Contenuti visivi cinematografici progettati per aumentare le vendite.
+          - generic [ref=e103]:
+            - link "Seguici su Instagram" [ref=e104] [cursor=pointer]:
+              - /url: https://www.instagram.com/drivenbylight.st/
+            - link "Guardaci su YouTube" [ref=e107] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UClWVBASXwJXdS4vKC0fwK6Q
+            - link "Connettiti su LinkedIn" [ref=e110] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/tiziano-sapuppo/
+        - generic [ref=e113]:
+          - heading "Link Rapidi" [level=3] [ref=e114]
+          - list [ref=e115]:
+            - listitem [ref=e116]:
+              - link "Home" [ref=e117] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e118]:
+              - link "Servizi" [ref=e119] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e120]:
+              - link "Come Lavoriamo" [ref=e121] [cursor=pointer]:
+                - /url: index.html#come-lavoriamo
+            - listitem [ref=e122]:
+              - link "Chi Sono" [ref=e123] [cursor=pointer]:
+                - /url: chi%20sono.html
+            - listitem [ref=e124]:
+              - link "Gallery" [ref=e125] [cursor=pointer]:
+                - /url: gallery.html
+        - generic [ref=e126]:
+          - heading "Servizi" [level=3] [ref=e127]
+          - list [ref=e128]:
+            - listitem [ref=e129]:
+              - link "Aziende & Concessionarie" [ref=e130] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e131]:
+              - link "Shooting 1:1" [ref=e132] [cursor=pointer]:
+                - /url: index.html#servizi
+            - listitem [ref=e133]:
+              - link "Eventi in Pista" [ref=e134] [cursor=pointer]:
+                - /url: index.html#servizi
+        - generic [ref=e135]:
+          - heading "Contatti" [level=3] [ref=e136]
+          - list [ref=e137]:
+            - listitem [ref=e138]:
+              - link "tiziano.sapuppo@drivenbylight.it" [ref=e139] [cursor=pointer]:
+                - /url: mailto:tiziano.sapuppo@drivenbylight.it
+            - listitem [ref=e140]:
+              - link "+39 329 662 8640" [ref=e141] [cursor=pointer]:
+                - /url: tel:+393296628640
+            - listitem [ref=e142]:
+              - link "Modulo Contatti" [ref=e143] [cursor=pointer]:
+                - /url: contatti.html
+            - listitem [ref=e144]:
+              - link "Privacy Policy" [ref=e145] [cursor=pointer]:
+                - /url: privacy.html
+      - paragraph [ref=e147]: © 2026 DrivenByLight — Tiziano Sapuppo. Tutti i diritti riservati.
+  - link "Contattaci su WhatsApp" [ref=e148] [cursor=pointer]:
+    - /url: https://wa.me/393296628640?text=Ciao%20Tiziano,%20vorrei%20informazioni%20sui%20vostri%20servizi.
+  - dialog "Gestione cookie" [ref=e151]:
+    - generic [ref=e152]:
+      - paragraph [ref=e153]:
+        - text: Utilizziamo cookie tecnici necessari al funzionamento del sito. Per maggiori informazioni consulta la nostra
+        - link "Privacy Policy" [ref=e154] [cursor=pointer]:
+          - /url: privacy.html
+        - text: .
+      - generic [ref=e155]:
+        - button "Accetta tutti i cookie" [ref=e156] [cursor=pointer]: Accetto
+        - button "Rifiuta i cookie non essenziali" [ref=e157] [cursor=pointer]: Rifiuto
