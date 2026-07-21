@@ -303,6 +303,118 @@
       // if (preferences.marketing) { loadFacebookPixel(); }
     }
 
+    /* ===== Cookie Management Link & Panel ===== */
+    var cookieManagementLink = document.querySelector('.cookie-management-link');
+    var cookieManagementPanel = document.querySelector('.cookie-management-panel');
+    var cookieManagementOverlay = document.querySelector('.cookie-management-overlay');
+    var cookieManagementClose = document.querySelector('.cookie-management-close');
+    var mgmtSave = document.getElementById('mgmt-save');
+    var mgmtReset = document.getElementById('mgmt-reset');
+
+    // Get management checkboxes
+    var mgmtTechnical = document.getElementById('mgmt-technical');
+    var mgmtStatistics = document.getElementById('mgmt-statistics');
+    var mgmtMarketing = document.getElementById('mgmt-marketing');
+    var mgmtFunctionalities = document.getElementById('mgmt-functionalities');
+
+    // Show management link after 5 seconds (if banner was already closed)
+    setTimeout(function () {
+      if (cookieManagementLink && !localStorage.getItem('cookieConsent')) {
+        cookieManagementLink.classList.add('show');
+      }
+    }, 5000);
+
+    // Open management panel
+    function openManagementPanel() {
+      if (!cookieManagementPanel) return;
+
+      var consent = localStorage.getItem('cookieConsent');
+      var preferences = { technical: true, statistics: false, marketing: false, functionalities: false };
+
+      if (consent) {
+        try {
+          preferences = JSON.parse(consent);
+        } catch (e) {
+          console.error('Error parsing cookie consent:', e);
+        }
+      }
+
+      // Update checkbox states
+      if (mgmtStatistics) mgmtStatistics.checked = preferences.statistics;
+      if (mgmtMarketing) mgmtMarketing.checked = preferences.marketing;
+      if (mgmtFunctionalities) mgmtFunctionalities.checked = preferences.functionalities;
+
+      cookieManagementPanel.classList.add('show');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    // Close management panel
+    function closeManagementPanel() {
+      if (!cookieManagementPanel) return;
+      cookieManagementPanel.classList.remove('show');
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Save preferences from management panel
+    function saveManagementPreferences() {
+      var preferences = {
+        technical: true, // Always enabled
+        statistics: mgmtStatistics ? mgmtStatistics.checked : false,
+        marketing: mgmtMarketing ? mgmtMarketing.checked : false,
+        functionalities: mgmtFunctionalities ? mgmtFunctionalities.checked : false
+      };
+
+      localStorage.setItem('cookieConsent', JSON.stringify(preferences));
+      applyCookiePreferences(preferences);
+      closeManagementPanel();
+    }
+
+    // Reset all preferences (except technical)
+    function resetAllPreferences() {
+      var preferences = {
+        technical: true, // Always enabled
+        statistics: false,
+        marketing: false,
+        functionalities: false
+      };
+
+      localStorage.setItem('cookieConsent', JSON.stringify(preferences));
+      applyCookiePreferences(preferences);
+
+      // Update checkboxes
+      if (mgmtStatistics) mgmtStatistics.checked = false;
+      if (mgmtMarketing) mgmtMarketing.checked = false;
+      if (mgmtFunctionalities) mgmtFunctionalities.checked = false;
+    }
+
+    // Event listeners for management panel
+    if (cookieManagementLink) {
+      cookieManagementLink.addEventListener('click', openManagementPanel);
+    }
+
+    if (cookieManagementClose) {
+      cookieManagementClose.addEventListener('click', closeManagementPanel);
+    }
+
+    if (cookieManagementOverlay) {
+      cookieManagementOverlay.addEventListener('click', closeManagementPanel);
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && cookieManagementPanel && cookieManagementPanel.classList.contains('show')) {
+        closeManagementPanel();
+      }
+    });
+
+    if (mgmtSave) {
+      mgmtSave.addEventListener('click', saveManagementPreferences);
+    }
+
+    if (mgmtReset) {
+      mgmtReset.addEventListener('click', resetAllPreferences);
+    }
+
     /* ===== Form Validation (contatti.html) ===== */
     var contactForm = document.getElementById('contact-form');
     if (contactForm) {

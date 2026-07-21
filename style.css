@@ -1022,3 +1022,231 @@ body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
   }
 }
 
+/* ============================================
+   COOKIE MANAGEMENT LINK & PANEL
+   ============================================ */
+
+.cookie-management-link {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.cookie-management-link.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.cookie-management-link:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: var(--color-orange);
+  transform: translateY(-2px);
+}
+
+.cookie-management-link svg {
+  flex-shrink: 0;
+}
+
+/* Cookie Management Panel Overlay */
+.cookie-management-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  display: none;
+}
+
+.cookie-management-panel.show {
+  display: block;
+}
+
+.cookie-management-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+}
+
+.cookie-management-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--color-dark);
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cookie-management-panel.show .cookie-management-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Header */
+.cookie-management-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.cookie-management-header h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.cookie-management-close {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-radius: 8px;
+}
+
+.cookie-management-close:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Body */
+.cookie-management-body {
+  padding: 32px;
+}
+
+.cookie-management-description {
+  color: var(--color-light-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Actions */
+.cookie-management-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+#mgmt-save,
+#mgmt-reset {
+  flex: 1;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+#mgmt-save {
+  background: linear-gradient(135deg, var(--color-orange), var(--color-red));
+  border: none;
+  color: #fff;
+}
+
+#mgmt-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(var(--orange-rgb), 0.4);
+}
+
+#mgmt-reset {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+#mgmt-reset:hover {
+  border-color: var(--color-red);
+  background: rgba(var(--red-rgb), 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .cookie-management-link {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .cookie-management-header {
+    padding: 20px 24px;
+  }
+
+  .cookie-management-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .cookie-management-body {
+    padding: 24px;
+  }
+
+  .cookie-management-actions {
+    flex-direction: column;
+  }
+
+  #mgmt-save,
+  #mgmt-reset {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cookie-management-link {
+    bottom: 12px;
+    right: 12px;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .cookie-management-content {
+    width: 95%;
+    max-width: none;
+    border-radius: 16px;
+  }
+
+  .cookie-management-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .cookie-management-body {
+    padding: 20px;
+  }
+}
+
