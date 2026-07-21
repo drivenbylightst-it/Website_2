@@ -504,10 +504,59 @@
   <!-- Cookie Banner -->
   <div class="cookie-banner" role="dialog" aria-label="Gestione cookie">
     <div class="cookie-inner">
-      <p class="cookie-text">Utilizziamo cookie tecnici necessari al funzionamento del sito. Per maggiori informazioni consulta la nostra <a href="privacy.html">Privacy Policy</a>.</p>
-      <div class="cookie-buttons">
-        <button class="cookie-btn-accept" aria-label="Accetta tutti i cookie">Accetto</button>
-        <button class="cookie-btn-decline" aria-label="Rifiuta i cookie non essenziali">Rifiuto</button>
+      <div class="cookie-content">
+        <p class="cookie-text">Utilizziamo cookie tecnici necessari al funzionamento del sito. Per maggiori informazioni consulta la nostra <a href="privacy.html">Privacy Policy</a>.</p>
+        <div class="cookie-buttons">
+          <button class="cookie-btn-decline" aria-label="Rifiuta i cookie non essenziali">Rifiuto</button>
+          <button class="cookie-btn-customize" aria-label="Personalizza i cookie">Personalizza</button>
+          <button class="cookie-btn-accept" aria-label="Accetta tutti i cookie">Accetto</button>
+        </div>
+      </div>
+
+      <!-- Cookie Customization Panel -->
+      <div class="cookie-customize-panel">
+        <h3 class="cookie-customize-title">Personalizza i Cookie</h3>
+        <p class="cookie-customize-description">Seleziona quali tipi di cookie desideri accettare:</p>
+
+        <div class="cookie-options">
+          <!-- Tecnici (obbligatori) -->
+          <label class="cookie-option">
+            <input type="checkbox" value="technical" checked disabled>
+            <span class="cookie-option-info">
+              <strong>Tecnici</strong>
+              <span>Necessari per il funzionamento del sito. Non possono essere disattivati.</span>
+            </span>
+          </label>
+
+          <!-- Statistiche -->
+          <label class="cookie-option">
+            <input type="checkbox" value="statistics" checked>
+            <span class="cookie-option-info">
+              <strong>Statistiche</strong>
+              <span>Ci aiutano a capire come visitano il sito per migliorare l'esperienza.</span>
+            </span>
+          </label>
+
+          <!-- Marketing -->
+          <label class="cookie-option">
+            <input type="checkbox" value="marketing">
+            <span class="cookie-option-info">
+              <strong>Marketing</strong>
+              <span>Utilizzati per mostrare annunci rilevanti e misurare l'efficacia delle campagne.</span>
+            </span>
+          </label>
+
+          <!-- Funzionalità -->
+          <label class="cookie-option">
+            <input type="checkbox" value="functionalities">
+            <span class="cookie-option-info">
+              <strong>Funzionalità</strong>
+              <span>Permettono al sito di ricordare le tue scelte (lingua, regione) per offrire un'esperienza personalizzata.</span>
+            </span>
+          </label>
+        </div>
+
+        <button class="cookie-btn-save" aria-label="Salva le preferenze">Salva Preferenze</button>
       </div>
     </div>
   </div>

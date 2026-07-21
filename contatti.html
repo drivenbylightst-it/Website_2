@@ -37,6 +37,16 @@
 
   <!-- EmailJS SDK -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- EmailJS Configuration - DO NOT MODIFY BELOW THIS LINE -->
+  <script>
+    // Initialize EmailJS with your Public Key
+    (function() {
+      emailjs.init({
+        publicKey: "-AUm0rkO4Pswl9mVE"
+      });
+    })();
+  </script>
 </head>
 <body class="dark-mode">
 
@@ -168,20 +178,82 @@
               <button type="submit" class="btn btn-primary" style="width: 100%;">Invia Messaggio &rarr;</button>
             </form>
 
+            <!-- EmailJS Form Handler -->
+            <script>
+              // EmailJS Configuration
+              const EMAILJS_SERVICE_ID = 'service_eesi0gp';
+              const EMAILJS_TEMPLATE_ID = 'template_h7k2ei4';
+
+              document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+
+                // Show loading state
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="spinner"></span> Invio in corso...';
+
+                // Collect form data
+                const templateParams = {
+                  from_name: document.getElementById('nome').value,
+                  email: document.getElementById('email').value,
+                  telefono: document.getElementById('telefono').value,
+                  servizio: document.getElementById('servizio').value,
+                  orario_preferito: document.getElementById('orario').value,
+                  messaggio: document.getElementById('messaggio').value
+                };
+
+                // Send email via EmailJS
+                emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+                  .then(function(response) {
+                    console.log('Email sent successfully!', response.status, response.text);
+
+                    // Show success message
+                    submitBtn.innerHTML = '✅ Messaggio inviato con successo!';
+                    submitBtn.style.background = 'var(--color-green)';
+
+                    // Reset form after 3 seconds
+                    setTimeout(function() {
+                      document.getElementById('contact-form').reset();
+                      submitBtn.disabled = false;
+                      submitBtn.innerHTML = originalText;
+                      submitBtn.style.background = '';
+                    }, 3000);
+                  }, function(error) {
+                    console.error('Failed to send email:', error);
+
+                    // Show error message
+                    submitBtn.innerHTML = '❌ Errore nell\'invio. Riprova più tardi.';
+                    submitBtn.style.background = 'var(--color-red)';
+
+                    // Reset button after 5 seconds
+                    setTimeout(function() {
+                      submitBtn.disabled = false;
+                      submitBtn.innerHTML = originalText;
+                      submitBtn.style.background = '';
+                    }, 5000);
+                  });
+              });
+            </script>
+
             <!-- EmailJS Integration Notes -->
             <!--
-              EMAILJS SETUP INSTRUCTIONS:
+              EMAILJS SETUP - CONFIGURATO! ✅
               ========================================
-              1. Register at https://www.emailjs.com/
-              2. Create a Service (connect your email)
-              3. Create a Template with variables:
-                 {{from_name}}, {{email}}, {{telefono}},
-                 {{servizio}}, {{orario_preferito}}, {{messaggio}}
-              4. Include EmailJS SDK in the <head>:
-                 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-              5. Initialize and send:
-                 emailjs.init('YOUR_PUBLIC_KEY');
-                 emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams);
+
+              Service ID: service_eesi0gp
+              Template ID: template_h7k2ei4
+              Public Key: -AUm0rkO4Pswl9mVE
+
+              TEMPLATE VARIABLES (da usare nell'email):
+              {{from_name}} → Nome mittente
+              {{email}} → Email del cliente
+              {{telefono}} → Telefono del cliente
+              {{servizio}} → Tipo di servizio richiesto
+              {{orario_preferito}} → Preferenza oraria
+              {{messaggio}} → Messaggio del cliente
+
               ========================================
             -->
 
