@@ -119,7 +119,7 @@ body.dark-mode .theme-toggle:hover {
 .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
 
 /* Hero Section */
-.page-hero { position: relative; min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+.page-hero { position: relative; z-index: 1; min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; }
 .hero-overlay { position: absolute; inset: 0; background: var(--gradient-hero); }
 .hero-content { position: relative; z-index: 2; padding: 120px 20px 80px; max-width: 750px; }
