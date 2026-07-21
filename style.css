@@ -625,3 +625,221 @@ body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
   to { transform: rotate(360deg); }
 }
 
+/* ============================================
+   COOKIE MANAGEMENT PANEL
+   ============================================ */
+.cookie-management-link-footer {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+.cookie-management-link-footer:hover {
+  color: var(--color-primary);
+}
+
+/* Cookie Management Panel Modal */
+.cookie-management-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.cookie-management-panel.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cookie-management-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.cookie-management-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: var(--color-bg-primary);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.cookie-management-panel.active .cookie-management-content {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cookie-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cookie-management-header h2 {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.cookie-management-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.cookie-management-close:hover {
+  color: var(--color-primary);
+}
+
+.cookie-management-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
+
+.cookie-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.cookie-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: var(--color-bg-secondary);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cookie-option:hover {
+  background: var(--color-bg-tertiary);
+}
+
+.cookie-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.cookie-option input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.cookie-option-info {
+  flex: 1;
+}
+
+.cookie-option-info strong {
+  display: block;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.cookie-option-info span {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.cookie-management-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.cookie-btn-accept,
+.cookie-btn-decline {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cookie-btn-accept {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.cookie-btn-accept:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.cookie-btn-decline {
+  background: transparent;
+  border: 2px solid var(--color-border) !important;
+  color: var(--color-text-secondary);
+}
+
+.cookie-btn-decline:hover {
+  background: var(--color-bg-tertiary);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .cookie-management-content {
+    padding: 24px;
+    width: 95%;
+  }
+
+  .cookie-management-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .cookie-management-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cookie-btn-accept,
+  .cookie-btn-decline {
+    width: 100%;
+    padding: 14px;
+  }
+}
+

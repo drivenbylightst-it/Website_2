@@ -499,4 +499,81 @@
 
   }); // end DOMContentLoaded
 
+  /* ============================================
+     COOKIE MANAGEMENT PANEL
+     ============================================ */
+  document.addEventListener('DOMContentLoaded', function () {
+    const cookieLink = document.querySelector('.cookie-management-link-footer');
+    const cookiePanel = document.querySelector('.cookie-management-panel');
+    const overlay = document.querySelector('.cookie-management-overlay');
+    const closeBtn = document.querySelector('.cookie-management-close');
+
+    if (cookieLink && cookiePanel) {
+      // Apertura pannello
+      cookieLink.addEventListener('click', function () {
+        cookiePanel.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+
+      // Chiusura con bottone X
+      closeBtn?.addEventListener('click', function () {
+        cookiePanel.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // Chiusura cliccando l'overlay
+      overlay?.addEventListener('click', function () {
+        cookiePanel.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // Chiusura con ESC
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && cookiePanel.classList.contains('active')) {
+          cookiePanel.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // Gestione preferenze cookie
+      const saveBtn = document.getElementById('mgmt-save');
+      const resetBtn = document.getElementById('mgmt-reset');
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', function () {
+          const preferences = {};
+          document.querySelectorAll('.cookie-option input[type="checkbox"]').forEach(function (cb) {
+            preferences[cb.id] = cb.checked;
+          });
+          localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+          cookiePanel.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', function () {
+          document.querySelectorAll('.cookie-option input[type="checkbox"]').forEach(function (cb) {
+            if (!cb.disabled) cb.checked = false;
+          });
+          localStorage.removeItem('cookiePreferences');
+        });
+      }
+
+      // Carica preferenze salvate
+      const savedPrefs = localStorage.getItem('cookiePreferences');
+      if (savedPrefs) {
+        try {
+          const prefs = JSON.parse(savedPrefs);
+          Object.keys(prefs).forEach(function (key) {
+            const cb = document.getElementById(key);
+            if (cb && !cb.disabled) cb.checked = prefs[key];
+          });
+        } catch (e) {
+          console.warn('Errore nel caricamento preferenze cookie:', e);
+        }
+      }
+    }
+  });
+
 })(); // end IIFE
