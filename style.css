@@ -284,8 +284,8 @@ body.dark-mode .social-icon svg { fill: #FFFFFF !important; }
 .footer-bottom { margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; font-size: 0.85rem; color: rgba(255,255,255,0.4); }
 
 /* Floating WhatsApp Button */
-.whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 900; width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37,211,102,0.4); transition: transform var(--transition-med), box-shadow var(--transition-med); }
-.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(37,211,102,0.55); }
+.whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 900; width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.2); transition: transform var(--transition-med), box-shadow var(--transition-med); }
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
 .whatsapp-float svg { width: 32px; height: 32px; fill: #FFFFFF !important; }
 
 /* Back to Top */
