@@ -311,6 +311,15 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
+  <!-- Cookie Management Link -->
+  <button class="cookie-management-link" aria-label="Gestisci le tue preferenze sui cookie">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+    </svg>
+    Gestione Cookie
+  </button>
+
   <!-- Cookie Banner -->
   <div class="cookie-banner" role="dialog" aria-label="Gestione cookie">
     <div class="cookie-inner">
@@ -318,6 +327,69 @@
       <div class="cookie-buttons">
         <button class="cookie-btn-accept" aria-label="Accetta tutti i cookie">Accetto</button>
         <button class="cookie-btn-decline" aria-label="Rifiuta i cookie non essenziali">Rifiuto</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Management Panel (hidden by default) -->
+  <div class="cookie-management-panel" role="dialog" aria-label="Pannello di gestione cookie">
+    <div class="cookie-management-overlay"></div>
+    <div class="cookie-management-content">
+      <div class="cookie-management-header">
+        <h2>Gestisci le tue preferenze sui Cookie</h2>
+        <button class="cookie-management-close" aria-label="Chiudi pannello di gestione">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cookie-management-body">
+        <p class="cookie-management-description">Puoi personalizzare quali tipi di cookie desideri accettare. Le tue preferenze saranno salvate nel tuo browser.</p>
+
+        <div class="cookie-options">
+          <!-- Tecnici (obbligatori) -->
+          <label class="cookie-option">
+            <input type="checkbox" value="technical" checked disabled id="mgmt-technical">
+            <span class="cookie-option-info">
+              <strong>Tecnici</strong>
+              <span>Necessari per il funzionamento del sito. Non possono essere disattivati.</span>
+            </span>
+          </label>
+
+          <!-- Statistiche -->
+          <label class="cookie-option">
+            <input type="checkbox" value="statistics" id="mgmt-statistics">
+            <span class="cookie-option-info">
+              <strong>Statistiche</strong>
+              <span>Ci aiutano a capire come visitano il sito per migliorare l'esperienza.</span>
+            </span>
+          </label>
+
+          <!-- Marketing -->
+          <label class="cookie-option">
+            <input type="checkbox" value="marketing" id="mgmt-marketing">
+            <span class="cookie-option-info">
+              <strong>Marketing</strong>
+              <span>Utilizzati per mostrare annunci rilevanti e misurare l'efficacia delle campagne.</span>
+            </span>
+          </label>
+
+          <!-- Funzionalità -->
+          <label class="cookie-option">
+            <input type="checkbox" value="functionalities" id="mgmt-functionalities">
+            <span class="cookie-option-info">
+              <strong>Funzionalità</strong>
+              <span>Permettono al sito di ricordare le tue scelte (lingua, regione) per offrire un'esperienza personalizzata.</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="cookie-management-actions">
+          <button class="cookie-btn-accept" id="mgmt-save">Salva Preferenze</button>
+          <button class="cookie-btn-decline" id="mgmt-reset">Reimposta Tutto</button>
+        </div>
       </div>
     </div>
   </div>
