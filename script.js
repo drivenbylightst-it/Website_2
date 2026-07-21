@@ -370,7 +370,7 @@
     var lightboxClose = document.getElementById('lightbox-close');
     var lightboxPrev = document.getElementById('lightbox-prev');
     var lightboxNext = document.getElementById('lightbox-next');
-    var lightboxBackdrop = lightbox ? lightbox.querySelector('.lightbox-backdrop') : null;
+    var lightboxBackdrop = document.querySelector('.lightbox-backdrop');
 
     if (lightbox && lightboxImg) {
       // Collect all gallery images across the page
