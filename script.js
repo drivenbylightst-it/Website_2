@@ -380,7 +380,7 @@
         var img = item.querySelector('img');
         if (img) {
           galleryImages.push({
-            src: img.src,
+            src: img.getAttribute('data-full') || img.src, // Usa full quality nella lightbox
             alt: img.alt || 'Foto DrivenByLight'
           });
         }
@@ -574,6 +574,32 @@
         }
       }
     }
+  });
+
+  /* ============================================
+     GALLERY IMAGE LOADING OPTIMIZATION
+     Rimuove l'animazione shimmer quando le immagini sono caricate
+     ============================================ */
+  document.addEventListener('DOMContentLoaded', function () {
+    var galleryImages = document.querySelectorAll('.gallery-item img');
+
+    galleryImages.forEach(function (img) {
+      // Se l'immagine è già caricata (cache), rimuovi subito shimmer
+      if (img.complete && img.naturalHeight !== 0) {
+        img.parentElement.classList.add('image-loaded');
+        return;
+      }
+
+      // Aspetta il caricamento completo
+      img.addEventListener('load', function () {
+        img.parentElement.classList.add('image-loaded');
+      });
+
+      // Gestione errori
+      img.addEventListener('error', function () {
+        img.parentElement.classList.add('image-error');
+      });
+    });
   });
 
 })(); // end IIFE

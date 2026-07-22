@@ -235,10 +235,42 @@ body.dark-mode .theme-toggle:hover {
 
 /* Car Images Grid — 2 columns on mobile, responsive on desktop */
 .car-images-grid { display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr); }
-.gallery-item { position: relative; border-radius: var(--radius-md); overflow: hidden; cursor: pointer; aspect-ratio: 4/3; box-shadow: var(--shadow-sm); transition: transform var(--transition-med), box-shadow var(--transition-med); }
+.gallery-item { position: relative; border-radius: var(--radius-md); overflow: hidden; cursor: pointer; aspect-ratio: 4/3; box-shadow: var(--shadow-sm); transition: transform var(--transition-med), box-shadow var(--transition-med); background-color: #e8e8e8; }
 .gallery-item:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.4s ease; will-change: transform; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.4s ease, opacity 0.3s ease; will-change: transform; }
 .gallery-item:hover img { transform: scale(1.08); }
+
+/* Loading placeholder animation */
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, #f5f5f5 25%, #e8e8e8 50%, #f5f5f5 75%);
+  background-size: 200% 100%;
+  animation: shimmer-loading 1.5s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gallery-item img { position: relative; z-index: 1; }
+
+@keyframes shimmer-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Rimuovi shimmer quando immagine è caricata */
+.gallery-item.image-loaded::before {
+  animation: fade-out-shimmer 0.3s ease forwards;
+}
+
+@keyframes fade-out-shimmer {
+  to { opacity: 0; visibility: hidden; }
+}
+
+.gallery-item.image-loaded img {
+  opacity: 1 !important;
+}
 
 /* Responsive — Tablet (768px+) */
 @media (min-width: 768px) {
@@ -463,7 +495,6 @@ body.dark-mode .social-icon svg { fill: #FFFFFF !important; }
   .form-row { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1.2fr 0.8fr; }
   .footer-grid { grid-template-columns: repeat(4, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
 
 }
 
@@ -571,12 +602,28 @@ body.dark-mode hr { background: rgba(255,255,255,0.06) !important; }
 /* Dark mode back to top */
 body.dark-mode .back-to-top { background: var(--color-light-gray); color: var(--color-black); }
 
-/* Dark mode gallery car sections */
-body.dark-mode .gallery-car-container { background: #1A1A2E; }
+/* Dark mode car section titles */
 body.dark-mode .car-section-title { color: #FFFFFF !important; }
 
 /* Dark mode map container */
 body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+
+/* ============================================
+   GEO CONTENT BLOCK — Visually Hidden (SEO Only)
+   Mantieni il contenuto per Google/AI ma nascondilo agli utenti
+   ============================================ */
+.geo-content-block {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  visibility: hidden !important;
+}
 
 /* ============================================
    LIGHTBOX MODAL — Gallery Viewer
@@ -685,23 +732,23 @@ body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
   /* Close button — top-right corner of image */
   .lightbox-close {
     top: -48px; right: 0;
-    width: 44px; height: 44px;
+    width: 44px; height: 44px; z-index: 15;
     background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3);
   }
 
   .lightbox-close svg { width: 22px; height: 22px; }
 
-  /* Arrows — full height overlay on image */
+  /* Arrows — compact vertical center, limited height */
   .lightbox-nav {
-    top: 0; transform: none;
-    width: 60px; height: 100%; border-radius: 0;
+    top: 50%; transform: translateY(-50%);
+    width: 60px; height: 80px; max-height: 40vh; border-radius: 12px;
     background: rgba(255,255,255,0.08); border: none;
   }
 
   .lightbox-nav:hover { background: rgba(255,255,255,0.15); }
 
-  .lightbox-prev { left: 0; border-radius: 0; }
-  .lightbox-next { right: 0; border-radius: 0; }
+  .lightbox-prev { left: 0; }
+  .lightbox-next { right: 0; }
 
   /* Arrow icons centered vertically */
   .lightbox-nav svg { width: 42px; height: 42px; pointer-events: none; }
@@ -728,8 +775,9 @@ body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
 
 /* ---------- MOBILE LIGHTBOX (≤ 480px) — compact ---------- */
 @media (max-width: 480px) {
-  .lightbox-nav { width: 52px; }
-  .lightbox-close { width: 42px; height: 42px; top: 8px; right: 8px; }
+  .lightbox-nav { width: 52px; height: 70px; max-height: 35vh; }
+  /* Keep close button at top for easy access on small screens */
+  .lightbox-close { width: 42px; height: 42px; z-index: 15; }
 }
 
 /* ---------- DESKTOP TWEAKS (≥ 1024px) ---------- */
@@ -785,14 +833,16 @@ body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
 /* Cookie Management Panel Modal */
 .cookie-management-panel {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .cookie-management-panel.active {
@@ -802,32 +852,28 @@ body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
 
 .cookie-management-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
 }
 
 .cookie-management-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
+  position: relative;
+  z-index: 2;
   background: var(--color-bg-primary);
   border-radius: 16px;
   padding: 32px;
   max-width: 500px;
-  width: 90%;
+  width: 100%;
   max-height: 85vh;
   overflow-y: auto;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
   transition: transform 0.3s ease;
 }
 
 .cookie-management-panel.active .cookie-management-content {
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
 }
 
 .cookie-management-header {
@@ -963,7 +1009,6 @@ body.dark-mode .map-container { box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
 @media (max-width: 600px) {
   .cookie-management-content {
     padding: 24px;
-    width: 95%;
   }
 
   .cookie-management-header h2 {
