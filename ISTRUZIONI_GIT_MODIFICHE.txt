@@ -1,6 +1,6 @@
 cd E:\NEWdrivenbylight" (Andare nella cartella dove c'è il sito e aprire il cmd)
   git status
-  git add -A
+  git add .
   git commit -m "nome identificativo della modifica"
   git push origin main
 

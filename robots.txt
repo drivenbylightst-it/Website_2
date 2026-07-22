@@ -1,4 +1,55 @@
+# ============================================
+# DrivenByLight — robots.txt
+# File di istruzioni per i crawler dei motori di ricerca
+# Ottimizzato per SEO e performance
+# ============================================
+
+# Istruzioni generali per tutti i bot
 User-agent: *
 Allow: /
 
+# Permette l'accesso a tutte le risorse necessarie per il rendering
+Allow: /brand_assets/
+Allow: /style.css
+Allow: /script.js
+
+# Non indicizzare parametri di sessione o tracking (se presenti in futuro)
+Disallow: /*?*
+Disallow: /*&*
+
+# Esclude cartelle temporanee o non pubbliche (se presenti)
+Disallow: /tmp/
+Disallow: /.git/
+
+# Specifica la posizione della sitemap
 Sitemap: https://www.drivenbylight.it/sitemap.xml
+
+# ============================================
+# Istruzioni specifiche per Googlebot
+# ============================================
+User-agent: Googlebot
+Allow: /
+Allow: /brand_assets/
+Allow: /style.css
+Allow: /script.js
+Disallow: /*?*
+Disallow: /*&*
+Sitemap: https://www.drivenbylight.it/sitemap.xml
+
+# Googlebot-specific: permette l'indicizzazione delle immagini
+Image-index: allow
+
+# ============================================
+# Istruzioni specifiche per Bingbot
+# ============================================
+User-agent: Bingbot
+Allow: /
+Allow: /brand_assets/
+Disallow: /*?*
+Disallow: /*&*
+Sitemap: https://www.drivenbylight.it/sitemap.xml
+
+# ============================================
+# Crawl-delay (opzionale - disabilitato per velocità)
+# ============================================
+# Crawl-delay: 1

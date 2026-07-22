@@ -1,28 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage - Priorità massima -->
   <url>
     <loc>https://www.drivenbylight.it/index.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
+    <!-- Immagini principali per Google Image Search -->
+    <image:image>
+      <image:loc>https://www.drivenbylight.it/brand_assets/hero.webp</image:loc>
+      <image:title>DrivenByLight — Fotografo e Videomaker Automotive Professional</image:title>
+      <image:caption>Fotografia automotive professionale per concessionarie e privati</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.drivenbylight.it/brand_assets/logo.png</image:loc>
+      <image:title>DrivenByLight Logo — Tiziano Sapuppo Fotografo Automotive</image:title>
+    </image:image>
   </url>
+
+  <!-- Gallery - Pagina principale per portfolio immagini -->
   <url>
     <loc>https://www.drivenbylight.it/gallery.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+    <!-- Immagini gallery per Google Image Search -->
+    <image:image>
+      <image:loc>https://www.drivenbylight.it/brand_assets/gallery-audi-a4-comp-1.webp</image:loc>
+      <image:title>Audi A4 Competition Plus — Foto Professionale Automotive DrivenByLight</image:title>
+      <image:caption>S Shooting fotografico professionale Audi A4 Competition Plus</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.drivenbylight.it/brand_assets/gallery-porsche-cayman-1.webp</image:loc>
+      <image:title>Porsche Cayman — Foto Professionale Shooting Automotive</image:title>
+      <image:caption>Fotografia sportiva Porsche Cayman professionale</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.drivenbylight.it/brand_assets/gallery-ferrari-california-t-1.webp</image:loc>
+      <image:title>Ferrari California T — Foto Professionale Shooting Lusso</image:title>
+      <image:caption>Fotografia lusso Ferrari California T professionale</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.drivenbylight.it/brand_assets/gallery-audi-rs3-1.webp</image:loc>
+      <image:title>Audi RS3 — Foto Professionale Shooting Prestazionale</image:title>
+      <image:caption>Fotografia sportiva Audi RS3 professionale</image:caption>
+    </image:image>
   </url>
+
+  <!-- Chi Sono - Pagina informativa importante per SEO locale -->
   <url>
     <loc>https://www.drivenbylight.it/chi-sono.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+
+    <!-- Immagine profilo -->
+    <image:image>
+      <image:loc>https://www.drivenbylight.it/brand_assets/chi%20sono.webp</image:loc>
+      <image:title>Tiziano Sapuppo — Fotografo e Videomaker Automotive a Comazzo (Lodi)</image:title>
+      <image:caption>Tiziano Sapuppo, fondatore di DrivenByLight, fotografo automotive professionista</image:caption>
+    </image:image>
   </url>
+
+  <!-- Contatti - Pagina fondamentale per conversioni -->
   <url>
     <loc>https://www.drivenbylight.it/contatti.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Privacy Policy - Aggiornata con Google Analytics info -->
   <url>
     <loc>https://www.drivenbylight.it/privacy.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <priority>0.3</priority>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
+
 </urlset>
