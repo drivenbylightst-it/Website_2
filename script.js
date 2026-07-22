@@ -595,10 +595,6 @@
         img.parentElement.classList.add('image-loaded');
       });
 
-      // Gestione errori
-      img.addEventListener('error', function () {
-        img.parentElement.classList.add('image-error');
-      });
     });
   });
 

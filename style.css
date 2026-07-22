@@ -273,10 +273,6 @@ body.dark-mode .hamburger span {
   to { opacity: 0; visibility: hidden; }
 }
 
-.gallery-item.image-loaded img {
-  opacity: 1 !important;
-}
-
 /* Responsive — Tablet (768px+) */
 @media (min-width: 768px) {
   .car-images-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
