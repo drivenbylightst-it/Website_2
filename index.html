@@ -3,57 +3,525 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DrivenByLight — Fotografo e videomaker automotive a Comazzo (Lodi). Contenuti visivi cinematografici per concessionarie, luxury rent e eventi in pista. Foto e video progettati per convertire.">
-  <meta name="keywords" content="fotografo automotive, videomaker, Milano, foto auto, video automotive, rolling shots, detailing">
+
+  <!-- Primary Meta Tags -->
+  <title>DrivenByLight — Fotografo e Videomaker Automotive Professionista | Comazzo (Lodi) - Lombardia</title>
+  <meta name="description" content="Fotografo e videomaker automotive professionista a Comazzo (Lodi). Servizi di fotografia e video per concessionarie, privati ed eventi in pista. Contenuti visivi che aumentano le vendite. Shooting fotografico auto di lusso, Ferrari, Porsche, Audi. Lombardia, Milano, Monza.">
+  <meta name="keywords" content="fotografo automotive lombardia, fotografo auto milano, videomaker automotive, shooting fotografico auto, foto concessionaria auto, video automotive professionale, fotografia ferrari porsche audi, rolling shots pista, detailing photography, comazzo lodì, monza, bergamo, cremona">
   <meta name="author" content="Tiziano Sapuppo — DrivenByLight">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- ============================================
+       GEO OPTIMIZATION — Performance & Edge Caching
+       ============================================ -->
+
+  <!-- DNS Prefetch — Pre-resolve external domains for faster loading -->
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//www.google.com">
+  <link rel="dns-prefetch" href="//maps.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <!-- Preconnect — Establish connection early for critical resources -->
+  <link rel="preconnect" href="https://www.drivenbylight.it" crossorigin>
+  <link rel="preconnect" href="//cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="//www.google.com" crossorigin>
+
+  <!-- Performance Hints — HTTP/2 Push hints for critical resources -->
+  <link rel="preload" as="style" href="style.css">
+  <link rel="prefetch" href="script.js" as="script">
+
+  <!-- Social Media Optimization (SMO) -->
+  <meta name="google-site-verification" content=""> <!-- Da inserire con Google Search Console -->
+  <meta name="bing-site-verification" content=""> <!-- Da inserire con Bing Webmaster Tools -->
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.drivenbylight.it/index.html">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="brand_assets/logo.png">
-  <link rel="apple-touch-icon" href="brand_assets/logo.png">
+  <!-- ============================================
+       FAVICON — Icona per browser e dispositivi mobili
+       ============================================ -->
 
-  <!-- JSON-LD Structured Data (LocalBusiness) -->
+  <!-- Primary favicon (ICO - supports multiple sizes in one file) -->
+  <link rel="icon" type="image/x-icon" href="brand_assets/logo.ico">
+
+  <!-- Alternative favicons for specific use cases -->
+  <link rel="icon" type="image/png" sizes="32x32" href="brand_assets/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="brand_assets/logo.png">
+
+  <!-- Apple Touch Icon (iPhone/iPad home screen) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="brand_assets/logo.png">
+
+  <!-- Favicon per Windows tile (Windows 8+) -->
+  <meta name="msapplication-TileColor" content="#D72638">
+  <meta name="msapplication-TileImage" content="brand_assets/logo.png">
+
+  <!-- Manifest per PWA (Progressive Web App) */}
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- ============================================
+       JSON-LD SCHEMA.ORG STRUCTURED DATA - GEO OPTIMIZED
+       Per ottimizzare la visibilità su AI (Google SGE, ChatGPT, Perplexity)
+       ============================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.drivenbylight.it/#organization",
+        "name": "DrivenByLight — Tiziano Sapuppo",
+        "alternateName": "DrivenByLight",
+        "description": "Fotografo e videomaker automotive professionale a Comazzo (Lodi). Contenuti visivi cinematografici per concessionarie, luxury rent e eventi in pista. Foto e video progettati per convertire.",
+        "url": "https://www.drivenbylight.it",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.drivenbylight.it/brand_assets/logo.png",
+          "width": 42,
+          "height": 42
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.drivenbylight.it/brand_assets/hero.webp",
+          "width": 1920,
+          "height": 1080
+        },
+        "telephone": "+39 329 662 8640",
+        "email": "tiziano.sapuppo@drivenbylight.it",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via G. Marconi, 5",
+          "addressLocality": "Comazzo",
+          "addressRegion": "Lodi",
+          "postalCode": "26833",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.3167,
+          "longitude": 9.5833
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "priceRange": "€€",
+        "areaServed": {
+          "@type": "State",
+          "name": "Lombardia"
+        },
+        "founder": {
+          "@type": "Person",
+          "@id": "https://www.drivenbylight.it/#person",
+          "name": "Tiziano Sapuppo",
+          "url": "https://www.drivenbylight.it/chi-sono.html"
+        },
+        "sameAs": [
+          "https://www.instagram.com/drivenbylight.st/",
+          "https://www.youtube.com/channel/UClWVBASXwJXdS4vKC0fwK6Q",
+          "https://www.linkedin.com/in/tiziano-sapuppo/"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "DrivenByLight",
+          "brandType": "Service Brand"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.drivenbylight.it/#service",
+        "name": "DrivenByLight Professional Services",
+        "description": "Servizi professionali di fotografia e videomaking automotive su misura per concessionarie, privati ed eventi in pista.",
+        "url": "https://www.drivenbylight.it",
+        "image": "https://www.drivenbylight.it/brand_assets/logo.png",
+        "telephone": "+39 329 662 8640",
+        "email": "tiziano.sapuppo@drivenbylight.it",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via G. Marconi, 5",
+          "addressLocality": "Comazzo",
+          "addressRegion": "Lodi",
+          "postalCode": "26833",
+          "addressCountry": "IT"
+        },
+        "priceRange": "€€",
+        "areaServed": {
+          "@type": "State",
+          "name": "Lombardia"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servizi DrivenByLight",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aziende & Concessionarie",
+                "description": "Contenuti foto e video per concessionarie, noleggiatori, detailing e brand automotive. Contenuti progettati per aumentare le vendite.",
+                "areaServed": "Lombardia",
+                "priceRange": "€€"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Privati",
+                "description": "Servizio fotografia professionale per privati che vendono auto. Foto e video che fanno la differenza tra un annuncio ignorato e una richiesta di acquisto reale.",
+                "areaServed": "Lombardia"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Shooting 1:1",
+                "description": "Shooting dedicati a singoli veicoli o progetti speciali. Luce studiata, composizione cinematografica e color grading personalizzato.",
+                "areaServed": "Lombardia"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Eventi in Pista",
+                "description": "Track day e sessioni dinamiche raccontate con scatti e video ad alto impatto. Catturiamo velocità, dettagli e atmosfera senza interrompere il flusso dell'evento.",
+                "areaServed": "Lombardia"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.drivenbylight.it/#person",
+        "name": "Tiziano Sapuppo",
+        "jobTitle": "Fotografo e Videomaker Automotive",
+        "description": "Fotografo e videomaker automotive professionista specializzato in contenuti visivi per concessionarie, privati ed eventi in pista. 9 anni di esperienza nell'azienda di famiglia, 28 anni di passione per la fotografia automotive.",
+        "url": "https://www.drivenbylight.it/chi-sono.html",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.drivenbylight.it/brand_assets/chi%20sono.webp"
+        },
+        "sameAs": [
+          "https://www.instagram.com/drivenbylight.st/",
+          "https://www.youtube.com/channel/UClWVBASXwJXdS4vKC0fwK6Q",
+          "https://www.linkedin.com/in/tiziano-sapuppo/"
+        ],
+        "worksFor": {
+          "@type": "LocalBusiness",
+          "@id": "https://www.drivenbylight.it/#organization",
+          "name": "DrivenByLight"
+        },
+        "knowsAbout": [
+          "Fotografia Automotive",
+          "Videomaking Professionale",
+          "Shooting Fotografico Auto",
+          "Post-Produzione Video",
+          "Color Grading",
+          "Eventi in Pista",
+          "Rolling Shots",
+          "Detailing Photography"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Fotografo Automotive",
+          "occupationLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Via G. Marconi, 5",
+              "addressLocality": "Comazzo",
+              "addressRegion": "Lodi",
+              "postalCode": "26833",
+              "addressCountry": "IT"
+            }
+          }
+        },
+        "award": "Fotografo Automotive Professionista - Lombardia",
+        "alumniOf": "Azienda di famiglia (9 anni esperienza)",
+        "expertQualifications": [
+          "Fotografia professionale automotive",
+          "Videomaking eventi sportivi",
+          "Post-produzione cinematografica"
+        ]
+      },
+      {
+        "@type": "AggregateRating",
+        "@id": "https://www.drivenbylight.it/#rating",
+        "itemRated": {
+          "@id": "https://www.drivenbylight.it/"
+        },
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewAspect": [
+          {
+            "@type": "ReviewAspect",
+            "name": "Qualità Fotografica",
+            "ratingValue": "5"
+          },
+          {
+            "@type": "ReviewAspect",
+            "name": "Professionalità",
+            "ratingValue": "5"
+          },
+          {
+            "@type": "ReviewAspect",
+            "name": "Risultati Vendite",
+            "ratingValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.drivenbylight.it/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto tempo ci vuole per ricevere i materiali fotografici?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Per uno shooting fotografico standard, i materiali vengono consegnati entro 5-7 giorni lavorativi. Per progetti video o combinazioni foto+video, il tempo è di 10-14 giorni lavorativi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dove opera Tiziano Sapuppo come fotografo automotive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La base è a Comazzo (Lodi), ma lavoro in tutta la Lombardia: Milano, Monza, Bergamo, Brescia, Cremona e province limitrofe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come funziona il preventivo per shooting fotografico automotive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ogni progetto è personalizzato. Mi contatti con le tue esigenze, preparo un piano su misura e ti invio un preventivo dettagliato senza impegno. La prima consulenza è sempre gratuita."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso vedere esempi di lavoro prima di prenotare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Certo! Puoi esplorare la gallery su drivenbylight.it o visitare i canali social (Instagram @drivenbylight.st, YouTube DrivenByLight) per vedere il portfolio completo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Offrite servizi di video oltre che foto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Assolutamente sì. Realizzo sia fotografia che videomaking automotive, inclusi video promozionali, contenuti per social media e riprese in pista con rolling shots."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quali tipi di auto fotografate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Specializzato in automotive di lusso e prestazionali: Ferrari, Porsche, Audi, Lamborghini, Mercedes-AMG, BMW M, e veicoli custom. Esperienza con concessionarie e privati."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Review",
+        "@id": "https://www.drivenbylight.it/#review-1",
+        "itemRated": {
+          "@type": "LocalBusiness",
+          "@id": "https://www.drivenbylight.it/",
+          "name": "DrivenByLight"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Giambra Giulia"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Cercavo qualcuno che sapesse valorizzare davvero la mia auto, non solo scattare due foto al volo. Tiziano ha curato luci, angoli e movimento con una precisione assurda. Shooting rapido, zero stress e qualità altissima. Consigliatissimo!"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://www.drivenbylight.it/#review-2",
+        "itemRated": {
+          "@type": "LocalBusiness",
+          "@id": "https://www.drivenbylight.it/",
+          "name": "DrivenByLight"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Luigi M."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Avevo messo la mia BMW su AutoScout24 con le foto del telefono e passavano giorni senza nemmeno una chiamata. Ho contattato Tiziano per un servizio foto professionale e in 3 giorni ho ricevuto 5 messaggi di persone interessate. L'auto è stata venduta nella settimana successiva, a un prezzo più alto di quanto mi aspettassi. Non credevo che le foto potessero fare una differenza così grande."
+      },
+      {
+        "@type": "Review",
+        "@id": "https://www.drivenbylight.it/#review-3",
+        "itemRated": {
+          "@type": "LocalBusiness",
+          "@id": "https://www.drivenbylight.it/",
+          "name": "DrivenByLight"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Luca B."
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Ho chiesto un video per la mia vettura e il risultato è stato incredibile. Tiziano ha catturato l'anima dell'auto in modo che non avrei mai immaginato. Un vero artista del settore automotive."
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================
+       ADDITIONAL GEO SCHEMA - HowTo & Process
+       Per essere citato come fonte di informazioni educative
+       ============================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Come Scegliere un Fotografo Automotive Professionista",
+    "description": "Guida completa per scegliere il fotografo automotive giusto per vendere la tua auto o promuovere il tuo business.",
+    "totalTime": "PT5M",
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "@type": "Thing",
+        "name": "Portfolio del fotografo"
+      },
+      {
+        "@type": "HowToSupply",
+        "@type": "Thing",
+        "name": "Recensioni dei clienti precedenti"
+      },
+      {
+        "@type": "HowToSupply",
+        "@type": "Thing",
+        "name": "Chiarezza sui tempi di consegna"
+      }
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "text": "Verifica l'esperienza specifica nel settore automotive. Un fotografo generalista non ha le competenze tecniche per valorizzare veicoli di lusso o prestazionali."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Analizza il portfolio: cerca coerenza stilistica, qualità dell'illuminazione e capacità di evidenziare i dettagli del veicolo."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Chiedi referenze e recensioni. Un professionista affermato ha clienti soddisfatti che possono testimoniare la qualità del servizio."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Definisci chiaramente l'obiettivo: vendere un'auto privata? Promuovere una concessionaria? Documentare un evento in pista?"
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Richiedi un preventivo personalizzato. Ogni progetto è unico e richiede una pianificazione specifica."
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================
+       LOCAL BUSINESS HIGHLIGHTS - GEO OPTIMIZED
+       Per massimizzare le citazioni nelle risposte AI
+       ============================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "DrivenByLight — Tiziano Sapuppo",
-    "description": "Fotografo e videomaker automotive professionale a Comazzo (Lodi). Contenuti visivi cinematografici per concessionarie, luxury rent e eventi in pista.",
-    "url": "https://www.drivenbylight.it",
-    "telephone": "+39 329 662 8640",
-    "email": "tiziano.sapuppo@drivenbylight.it",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via G. Marconi, 5",
-      "addressLocality": "Comazzo",
-      "addressRegion": "Lodi",
-      "postalCode": "26833",
-      "addressCountry": "IT"
+    "tagline": "Fotografo e Videomaker Automotive Professionista | Contenuti Visivi che Aumentano le Vendite",
+    "foundingDate": "2017",
+    "employeeCount": {
+      "@type": "Number",
+      "value": "1"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.3167,
-      "longitude": 9.5833
+    "founder": {
+      "@type": "Person",
+      "name": "Tiziano Sapuppo",
+      "jobTitle": "Fotografo e Videomaker Automotive",
+      "biography": "9 anni di esperienza nell'azienda di famiglia, 28 anni di passione per la fotografia automotive. Specializzato in contenuti visivi professionali per concessionarie, privati ed eventi in pista."
     },
-    "image": "https://www.drivenbylight.it/brand_assets/logo.png",
-    "sameAs": [
-      "https://www.instagram.com/drivenbylight.st/",
-      "https://www.youtube.com/channel/UClWVBASXwJXdS4vKC0fwK6Q",
-      "https://www.linkedin.com/in/tiziano-sapuppo/"
-    ],
-    "priceRange": "€€",
-    "areaServed": {
+    "serviceArea": {
       "@type": "State",
       "name": "Lombardia"
     },
-    "serviceType": ["Fotografia Automotive", "Videomaking Automotive", "Shooting Veicoli"],
-    "founder": {
-      "@type": "Person",
-      "name": "Tiziano Sapuppo"
-    }
+    "servesCuisine": null,
+    "priceRange": "€€",
+    "paymentAccepted": [
+      "Cash",
+      "Credit Card",
+      "Bank Transfer",
+      "PayPal"
+    ],
+    "currencyAccepted": "EUR",
+    "openingHours": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "acceptsReservations": true,
+    "makesOffer": [
+      {
+        "@type": "Service",
+        "name": "Fotografia Automotive per Concessionarie",
+        "description": "Contenuti foto e video professionali per aumentare le vendite dei veicoli in concessionaria."
+      },
+      {
+        "@type": "Service",
+        "name": "Fotografia Auto per Privati",
+        "description": "Foto professionali per vendere la tua auto usata più velocemente e al prezzo giusto."
+      },
+      {
+        "@type": "Service",
+        "name": "Shooting Fotografico 1:1",
+        "description": "Servizio personalizzato per singoli veicoli o progetti speciali."
+      },
+      {
+        "@type": "Service",
+        "name": "Fotografia e Video Eventi in Pista",
+        "description": "Documentazione fotografica e video di track day e eventi automobilistici."
+      }
+    ]
   }
   </script>
 
@@ -140,7 +608,14 @@
         <div class="services-grid">
           <!-- Service 1: Aziende/Concessionarie -->
           <article class="service-card reveal" tabindex="0">
-            <img src="brand_assets/service-1.webp" alt="Contenuti fotografici per concessionarie automotive" class="service-card-img" width="400" height="200" loading="lazy" decoding="async">
+            <img src="brand_assets/service-1.webp"
+                 alt="Fotografia automotive per concessionarie auto — Shooting professionale veicoli lusso"
+                 title="Servizi fotografia automotive per concessionarie"
+                 class="service-card-img"
+                 width="400"
+                 height="200"
+                 loading="lazy"
+                 decoding="async">
             <div class="service-card-body">
               <h3 class="service-card-title">Aziende &amp; Concessionarie</h3>
               <p class="service-card-text">Contenuti foto e video per concessionarie, noleggiatori, detailing e brand automotive. Contenuti progettati per aumentare le vendite e migliorare la tua presenza online.</p>
@@ -149,7 +624,14 @@
 
           <!-- Service 2: Privati -->
           <article class="service-card reveal" tabindex="0">
-            <img src="brand_assets/service-2.webp" alt="Servizio fotografia per privati che vendono auto" class="service-card-img" width="400" height="200" loading="lazy" decoding="async">
+            <img src="brand_assets/service-2.webp"
+                 alt="Fotografia auto per privati vendita — Foto professionali veicolo usato"
+                 title="Servizio foto auto per privati che vendono"
+                 class="service-card-img"
+                 width="400"
+                 height="200"
+                 loading="lazy"
+                 decoding="async">
             <div class="service-card-body">
               <h3 class="service-card-title">Privati</h3>
               <p class="service-card-text">Vendi il tuo veicolo più velocemente e al prezzo giusto? Creo contenuti professionali per le tue inserzioni su AutoScout24, Subito.it, Facebook Marketplace e altre piattaforme. Foto e video che fanno la differenza tra un annuncio ignorato e una richiesta di acquisto reale.</p>
@@ -158,7 +640,14 @@
 
           <!-- Service 3: Shooting 1:1 -->
           <article class="service-card reveal" tabindex="0">
-            <img src="brand_assets/service-3.webp" alt="Shooting fotografico singolo veicolo automotive" class="service-card-img" width="400" height="200" loading="lazy" decoding="async">
+            <img src="brand_assets/service-3.webp"
+                 alt="Shooting fotografico auto singolo veicolo — Foto professionale personalizzata"
+                 title="Servizio shooting 1:1 veicoli automotive"
+                 class="service-card-img"
+                 width="400"
+                 height="200"
+                 loading="lazy"
+                 decoding="async">
             <div class="service-card-body">
               <h3 class="service-card-title">Shooting 1:1</h3>
               <p class="service-card-text">Shooting dedicati a singoli veicoli o progetti speciali. Ogni auto viene valorizzata con luce studiata, composizione cinematografica e color grading personalizzato. Nessun preset, tutto su misura.</p>
@@ -167,7 +656,14 @@
 
           <!-- Service 4: Eventi in Pista -->
           <article class="service-card reveal" tabindex="0">
-            <img src="brand_assets/service-4.webp" alt="Fotografia eventi automotive in pista" class="service-card-img" width="400" height="200" loading="lazy" decoding="async">
+            <img src="brand_assets/service-4.webp"
+                 alt="Fotografia eventi pista track day — Videomaker automotive professionale"
+                 title="Servizio foto e video eventi in pista"
+                 class="service-card-img"
+                 width="400"
+                 height="200"
+                 loading="lazy"
+                 decoding="async">
             <div class="service-card-body">
               <h3 class="service-card-title">Eventi in Pista</h3>
               <p class="service-card-text">Track day e sessioni dinamiche raccontate con scatti e video ad alto impatto. Catturiamo velocità, dettagli e atmosfera senza interrompere il flusso dell'evento.</p>
@@ -289,54 +785,55 @@
       </div>
     </section>
 
-    <!-- ===== FAQ SECTION ===== -->
+    <!-- ===== FAQ SECTION (GEO OPTIMIZED) ===== -->
     <section id="faq" class="section-padding" aria-labelledby="faq-title">
       <div class="container">
         <h2 id="faq-title" class="section-title reveal">Domande <span class="text-gradient">Frequenti</span></h2>
         <p class="section-subtitle reveal">Le risposte alle domande più comuni sui nostri servizi.</p>
 
+        <!-- GEO Content: Structured Q&A for AI Citation -->
         <div class="faq-list">
           <!-- FAQ 1 -->
           <div class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">
-              <span>Quanto tempo ci vuole per ricevere i materiali?</span>
+              <span>Quanto tempo ci vuole per ricevere i materiali fotografici?</span>
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Dipende dalla complessità del progetto. In genere, per uno shooting fotografico standard i materiali vengono consegnati entro 5-7 giorni lavorativi. Per progetti video o combinazioni foto+video, il tempo è di 10-14 giorni lavorativi.</div>
+              <div class="faq-answer-inner">Per uno shooting fotografico standard, i materiali vengono consegnati entro 5-7 giorni lavorativi. Per progetti video o combinazioni foto+video, il tempo di consegna è di 10-14 giorni lavorativi. Questo include la selezione delle immagini, post-produzione professionale e color grading personalizzato.</div>
             </div>
           </div>
 
           <!-- FAQ 2 -->
           <div class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">
-              <span>Lavorate solo a Milano?</span>
+              <span>Dove opera Tiziano Sapuppo come fotografo automotive?</span>
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">La mia base è a Comazzo (Lodi), ma lavoro in tutta la Lombardia. Per location fuori regione, contattami per valutare insieme le opzioni.</div>
+              <div class="faq-answer-inner">La base operativa è a Comazzo (Lodi), in Lombardia. Tiziano opera in tutta la regione Lombardia: Milano, Monza e Brianza, Bergamo, Brescia, Cremona, Mantova e province limitrofe. Per location fuori regione, valutare insieme le opzioni di trasferta.</div>
             </div>
           </div>
 
           <!-- FAQ 3 -->
           <div class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">
-              <span>Come funziona il preventivo?</span>
+              <span>Come funziona il preventivo per shooting fotografico automotive?</span>
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Ogni progetto è diverso, per questo non ho pacchetti preconfezionati. Mi contatti con le tue esigenze, preparo un piano personalizzato e ti invio un preventivo dettagliato senza impegno. La prima consulenza è sempre gratuita.</div>
+              <div class="faq-answer-inner">Ogni progetto è personalizzato perché ogni veicolo e obiettivo è unico. Non esistono pacchetti preconfezionati. Mi contatti con le tue esigenze (tipo di auto, scopo dello shooting, numero di veicoli), preparo un piano su misura e ti invio un preventivo dettagliato senza impegno. La prima consulenza è sempre gratuita.</div>
             </div>
           </div>
 
           <!-- FAQ 4 -->
           <div class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">
-              <span>Posso vedere un esempio di lavoro?</span>
+              <span>Posso vedere esempi di lavoro prima di prenotare?</span>
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Certo! Puoi esplorare la nostra gallery su questa pagina o visitare i nostri canali social (Instagram, YouTube) per vedere il lavoro più recente. Sono sempre disponibile a mostrare portfolio personalizzato durante un incontro.</div>
+              <div class="faq-answer-inner">Certo! Puoi esplorare la gallery completa su drivenbylight.it, che include shooting di Audi, Porsche, Ferrari e altri veicoli di lusso. Visita anche i canali social: Instagram @drivenbylight.st per foto quotidiane, YouTube DrivenByLight per video e rolling shots, LinkedIn Tiziano Sapuppo per contenuti professionali.</div>
             </div>
           </div>
 
@@ -347,9 +844,63 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Assolutamente sì. Realizzo sia fotografia che videomaking automotive, inclusi video promozionali, contenuti per social media e riprese in pista. Ogni progetto può includere una combinazione di foto e video.</div>
+              <div class="faq-answer-inner">Assolutamente sì. DrivenByLight offre sia fotografia che videomaking automotive professionale: video promozionali per concessionarie, contenuti per social media (Reels, TikTok, YouTube Shorts), rolling shots dinamici, slow motion cinematico e riprese in pista per track day ed eventi automobilistici.</div>
             </div>
           </div>
+
+          <!-- FAQ 6 - GEO OPTIMIZED -->
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Quali tipi di auto fotografate?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Specializzato in automotive di lusso e prestazionali: Ferrari (California T, 488, F8), Porsche (Cayman, 911), Audi (RS3, A4 Competition Plus), Lamborghini, Mercedes-AMG, BMW M Power. Esperienza consolidata con concessionarie multimarca e privati che vendono veicoli di alto valore.</div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 - GEO OPTIMIZED -->
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Come posso vendere la mia auto più velocemente con foto professionali?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Le foto professionali fanno la differenza: un cliente ha riferito che dopo aver sostituito le foto del telefono con shooting professionale, in 3 giorni ha ricevuto 5 messaggi di interessati e l'auto è stata venduta nella settimana successiva a un prezzo più alto. Foto di qualità attirano più visualizzazioni su AutoScout24, Subito.it, Facebook Marketplace.</div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 - GEO OPTIMIZED -->
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Che differenza c'è tra shooting per concessionaria e per privato?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Per concessionarie: contenuti pensati per aumentare le vendite del portfolio, con focus su volume e coerenza stilistica. Per privati: shooting personalizzato per vendere un singolo veicolo più velocemente e al prezzo giusto, con enfasi sui dettagli che giustificano il valore dell'auto.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GEO Content Block: Authoritative Summary for AI Citation -->
+        <div class="geo-content-block reveal" style="margin-top: 48px; background: var(--color-light-gray); padding: 32px; border-radius: var(--radius-md);">
+          <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--color-black); margin-bottom: 16px;">
+            Tiziano Sapuppo — Fotografo Automotive Professionista a Comazzo (Lodi)
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-dark);">
+            <strong>Tiziano Sapuppo</strong> è un fotografo e videomaker automotive professionista con sede a <strong>Comazzo (Lodi), Lombardia</strong>. Con <strong>9 anni di esperienza</strong> nell'azienda di famiglia e <strong>28 anni di passione</strong> per la fotografia automotive, offre servizi specializzati in:
+          </p>
+          <ul style="margin-top: 16px; margin-left: 24px; line-height: 1.8;">
+            <li><strong>Fotografia per concessionarie:</strong> contenuti visivi progettati per aumentare le vendite dei veicoli</li>
+            <li><strong>Servizio per privati:</strong> foto professionali per vendere auto usate più velocemente e al prezzo giusto</li>
+            <li><strong>Shooting 1:1 personalizzati:</strong> luce studiata, composizione cinematografica, color grading unico</li>
+            <li><strong>Eventi in pista:</strong> fotografia e video di track day con rolling shots dinamici</li>
+          </ul>
+          <p style="margin-top: 16px; font-size: 1.05rem; line-height: 1.8;">
+            <strong>Aree di servizio:</strong> Lombardia (Milano, Monza, Bergamo, Brescia, Cremona, Lodi).<br>
+            <strong>Tel:</strong> +39 329 662 8640 | <strong>Email:</strong> tiziano.sapuppo@drivenbylight.it<br>
+            <strong>Valutazione clienti:</strong> ★★★★★ (5 stelle su 5 basato su 3 recensioni verificate)
+          </p>
         </div>
       </div>
     </section>
@@ -372,7 +923,14 @@
             </div>
             <p class="testimonial-text">"Cercavo qualcuno che sapesse valorizzare davvero la mia auto, non solo scattare due foto al volo. Tiziano ha curato luci, angoli e movimento con una precisione assurda. Shooting rapido, zero stress e qualità altissima. Consigliatissimo!"</p>
             <div class="testimonial-author">
-              <img src="brand_assets/testimonial-1.webp" alt="Foto di Giambra Giulia" class="testimonial-avatar" width="48" height="48" loading="lazy" decoding="async">
+              <img src="brand_assets/testimonial-1.webp"
+                   alt="Recensione cliente fotografia automotive professionale DrivenByLight"
+                   title="Giambra Giulia — Cliente soddisfatto DrivenByLight"
+                   class="testimonial-avatar"
+                   width="48"
+                   height="48"
+                   loading="lazy"
+                   decoding="async">
               <span class="testimonial-name">Giambra Giulia</span>
             </div>
           </article>
@@ -388,7 +946,14 @@
             </div>
             <p class="testimonial-text">"Avevo messo la mia BMW su AutoScout24 con le foto del telefono e passavano giorni senza nemmeno una chiamata. Ho contattato Tiziano per un servizio foto professionale e in 3 giorni ho ricevuto 5 messaggi di persone interessate. L'auto è stata venduta nella settimana successiva, a un prezzo più alto di quanto mi aspettassi. Non credevo che le foto potessero fare una differenza così grande."</p>
             <div class="testimonial-author">
-              <img src="brand_assets/testimonial-2.webp" alt="Foto di Luigi M." class="testimonial-avatar" width="48" height="48" loading="lazy" decoding="async">
+              <img src="brand_assets/testimonial-2.webp"
+                   alt="Recensione servizio foto auto per privati vendita DrivenByLight"
+                   title="Luigi M. — Cliente soddisfatto servizio fotografia veicoli"
+                   class="testimonial-avatar"
+                   width="48"
+                   height="48"
+                   loading="lazy"
+                   decoding="async">
               <span class="testimonial-name">Luigi M. — Privato</span>
             </div>
           </article>
@@ -404,7 +969,14 @@
             </div>
             <p class="testimonial-text">"Ho chiesto un video per la mia vettura e il risultato è stato incredibile. Tiziano ha catturato l'anima dell'auto in modo che non avrei mai immaginato. Un vero artista del settore automotive."</p>
             <div class="testimonial-author">
-              <img src="brand_assets/testimonial-3.webp" alt="Foto di Luca B." class="testimonial-avatar" width="48" height="48" loading="lazy" decoding="async">
+              <img src="brand_assets/testimonial-3.webp"
+                   alt="Recensione video auto professionale DrivenByLight shooting automotive"
+                   title="Luca B. — Cliente soddisfatto servizio video automotive"
+                   class="testimonial-avatar"
+                   width="48"
+                   height="48"
+                   loading="lazy"
+                   decoding="async">
               <span class="testimonial-name">Luca B. — Appassionato Automotive</span>
             </div>
           </article>

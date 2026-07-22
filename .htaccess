@@ -1,0 +1,273 @@
+# ============================================
+# DrivenByLight — .htaccess Configuration
+# Apache Web Server Optimization & Security
+# GEO OPTIMIZED for Global Edge Performance
+# ============================================
+
+# ============================================
+# EDGE CACHING STRATEGY — HTTP/2 Push Hints
+# Ottimizzazione per CDN edge e caching globale
+# ============================================
+
+<IfModule mod_headers.c>
+    # Cache-Control per asset statici (edge caching)
+    <FilesMatch "\.(js|css|webp|jpg|jpeg|png|gif|svg|ico|woff2?|ttf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable, stale-while-revalidate=86400"
+    </FilesMatch>
+
+    # HTML files — Short cache for fresh content (GEO optimized)
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "public, max-age=3600, stale-while-revalidate=7200, stale-if-error=86400"
+    </FilesMatch>
+
+    # JSON-LD Schema — Moderate cache (1 day) for SEO
+    <FilesMatch "\.json$">
+        Header set Cache-Control "public, max-age=86400, stale-while-revalidate=43200"
+    </FilesMatch>
+
+    # Sitemap & Robots — Long cache (1 week)
+    <FilesMatch "\.(xml|txt)$">
+        Header set Cache-Control "public, max-age=604800, immutable"
+    </FilesMatch>
+
+    # Preload hints for critical resources (HTTP/2 Push simulation)
+    Header always link "</style.css>; rel=preload; as=style"; nopush
+    Header always link "</script.js>; rel=prefetch; as=script"; nopush
+</IfModule>
+
+# ============================================
+# ENABLE GZIP COMPRESSION
+# Riduce le dimensioni dei file per caricamento più veloce
+# ============================================
+<IfModule mod_deflate.c>
+  # Comprimi HTML, CSS, JavaScript, XML, JSON, Font
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/woff
+  AddOutputFilterByType DEFLATE font/woff2
+
+  # Escludi immagini già compresse (WebP, JPEG) per evitare doppia compressione
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# ============================================
+# BROWSER CACHING
+# Cachea gli asset statici per ridurre i caricamenti ripetuti
+# ============================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Immagini: cache lunga (1 anno)
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Font: cache lunga (1 anno)
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+
+  # CSS e JavaScript: cache media (1 mese) con revisione
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+
+  # HTML: nessuna cache o breve cache per aggiornamenti frequenti
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # Fallback generico
+  ExpiresDefault "access plus 1 month"
+</IfModule>
+
+# ============================================
+# HTTP TO HTTPS REDIRECT
+# Reindirizza tutto il traffico HTTP verso HTTPS
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect HTTP a HTTPS (solo se non è già HTTPS)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Forza WWW o non-WWW (scegliere una preferenza - qui: con www)
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+# ============================================
+# SECURITY HEADERS — GEO OPTIMIZED
+# Protegge il sito da attacchi comuni + Edge security
+# ============================================
+<IfModule mod_headers.c>
+    # Prevenire clickjacking (impedisce embedding del sito in iframe)
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Prevenire MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # XSS Protection (per browser legacy)
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Content Security Policy (CSP) - limita risorse caricate (GEO optimized)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'strict-dynamic' https://cdn.jsdelivr.net https://www.google.com https://www.youtube.com https://wa.me; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.google.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; frame-src https://www.google.com; connect-src 'self' https://api.emailjs.com;"
+
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions Policy (ex Feature-Policy)
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Cross-Origin Resource Sharing (CORS) per API esterne
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+
+    # Edge caching headers (CDN compatible)
+    Header set Surrogate-Control "max-age=3600"
+</IfModule>
+
+# ============================================
+# REMOVE URL QUERY STRINGS FROM RESOURCES
+# Rimuove ? da URL per migliore SEO e cache
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteCond %{THE_REQUEST} \s(/.+)\?([^\s]+) [NC]
+  RewriteRule ^ %1 [R=301,L]
+</IfModule>
+
+# ============================================
+# CUSTOM ERROR PAGES
+# Page di errore personalizzate per migliore UX
+# ============================================
+<IfModule mod_rewrite.c>
+  ErrorDocument 400 /index.html
+  ErrorDocument 401 /index.html
+  ErrorDocument 403 /index.html
+  ErrorDocument 404 /index.html
+  ErrorDocument 500 /index.html
+</IfModule>
+
+# ============================================
+# DIRECTORY ACCESS PROTECTION
+# Impedisce l'accesso a cartelle sensibili
+# ============================================
+<IfModule mod_autoindex.c>
+  # Disabilita listing delle directory
+  Options -Indexes
+</IfModule>
+
+# Protegge file di configurazione e nascosti
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# ============================================
+# WEBP IMAGE SUPPORT
+# Serve immagini WebP se il browser le supporta
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Verifica supporto WebP
+  RewriteCond %{HTTP_ACCEPT} image/webp [NC]
+
+  # Cerca file .webp corrispondenti
+  RewriteCond %{REQUEST_FILENAME}\.webp -f
+
+  # Serve il file .webp invece dell'originale
+  RewriteRule ^(.+)\.(jpg|jpeg|png)$ $1.webp [T=image/webp,E=accept:1]
+</IfModule>
+
+# ============================================
+# FORCE MIME TYPES FOR SECURITY
+# Forza i tipi MIME corretti per file specifici
+# ============================================
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+  AddType font/woff .woff
+  AddType application/javascript .js
+  AddType text/css .css
+</IfModule>
+
+# ============================================
+# PREVENT E-MAIL HARVESTING
+# Nasconde gli indirizzi email dal crawling
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteCond %{QUERY_STRING} ([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,}) [NC]
+  RewriteRule ^$ - [F,L]
+</IfModule>
+
+# ============================================
+# BLOCK BAD BOTS AND SPIDERS
+# Previene accessi da bot malevoli
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Blocca user-agent noti per spam/malware
+  RewriteCond %{HTTP_USER_AGENT} (libwww|perl|python|wget|curl|nikto|nmap|masscan|dirbuster|gobuster|wfuzz|sqlmap) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} (scanner|crawler|fetch|grabber|tourbot|extractor|hitchecker|rover|monitor) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} (semrush|ahrefs|mj12|dotbot|petalbot|yandex|baiduspider|duckduckbot|bingbot) [NC]
+  RewriteRule ^ - [F,L]
+</IfModule>
+
+# ============================================
+# PROTECT WP-CONFIG AND OTHER SENSITIVE FILES
+# (Preventivo per eventuali futuri sviluppi)
+# ============================================
+<FilesMatch "^wp-config\.php$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# ============================================
+# FORCE UTF-8 ENCODING
+# Garantisce corretta codifica caratteri
+# ============================================
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddCharset UTF-8 .html .htm .css .js .json .xml .txt .webp
+</IfModule>
+
+# ============================================
+# REWRITE RULES FOR CLEAN URLs (OPZIONALE)
+# Abilita URL puliti se necessario in futuro
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Rimuovi trailing slash dalle directory
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+  # Aggiungi trailing slash alle directory
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+# ============================================
+# END OF .HTACCESS CONFIGURATION
+# ============================================
