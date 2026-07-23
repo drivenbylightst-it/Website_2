@@ -284,12 +284,12 @@ body.dark-mode .hamburger span {
 }
 
 /* Privacy Policy */
-.privacy-content { max-width: 800px; margin: 0 auto; }
-.privacy-section { margin-bottom: 32px; }
+.privacy-content { max-width: 800px; margin: 0 auto; padding: 24px 0; }
+.privacy-section { margin-bottom: 32px; padding: 24px; background: var(--color-light-gray); border-radius: var(--radius-md); }
 .privacy-section h3 { font-size: 1.2rem; font-weight: 700; color: var(--color-black); margin-bottom: 12px; padding-left: 16px; border-left: 4px solid var(--color-red); }
 .privacy-section p, .privacy-section li { color: var(--color-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 8px; }
 .privacy-section ul { padding-left: 24px; list-style: disc; }
-.privacy-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.9rem; }
+.privacy-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.9rem; overflow-x: auto; display: block; }
 .privacy-table th, .privacy-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--color-light-gray); }
 .privacy-table th { background: var(--color-black); color: var(--color-white); font-weight: 600; }
 .privacy-table td { color: var(--color-gray); }
@@ -482,6 +482,40 @@ body.dark-mode .social-icon svg { fill: #FFFFFF !important; }
   /* Container padding mobile */
   .container {
     padding: 0 16px !important;
+  }
+
+  /* Privacy Policy mobile */
+  .privacy-content {
+    padding: 16px 0 !important;
+  }
+
+  .privacy-section {
+    margin-bottom: 24px !important;
+    padding: 20px 16px !important;
+  }
+
+  .privacy-section h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 10px !important;
+    padding-left: 12px !important;
+  }
+
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 0.9rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  .privacy-table {
+    font-size: 0.85rem !important;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .privacy-table th,
+  .privacy-table td {
+    padding: 10px 12px !important;
   }
 }
 
