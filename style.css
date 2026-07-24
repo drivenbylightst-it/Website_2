@@ -486,12 +486,12 @@ body.dark-mode .social-icon svg { fill: #FFFFFF !important; }
 
   /* Privacy Policy mobile */
   .privacy-content {
-    padding: 16px 0 !important;
+    padding: 16px 4px !important;
   }
 
   .privacy-section {
     margin-bottom: 24px !important;
-    padding: 20px 16px !important;
+    padding: 20px 12px !important;
   }
 
   .privacy-section h3 {
@@ -504,6 +504,26 @@ body.dark-mode .social-icon svg { fill: #FFFFFF !important; }
   .privacy-section li {
     font-size: 0.9rem !important;
     margin-bottom: 6px !important;
+  }
+
+  /* Dark mode privacy text visibility fix */
+  body.dark-mode .privacy-section h3 {
+    color: #FFFFFF !important;
+  }
+
+  body.dark-mode .privacy-section p,
+  body.dark-mode .privacy-section li {
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  body.dark-mode .privacy-table th {
+    background: #FFFFFF !important;
+    color: #1C1C1C !important;
+  }
+
+  body.dark-mode .privacy-table td {
+    border-bottom-color: rgba(255, 255, 255, 0.06) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
   }
 
   .privacy-table {
