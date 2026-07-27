@@ -291,8 +291,15 @@ body.dark-mode .hamburger span {
 .privacy-section ul { padding-left: 24px; list-style: disc; }
 .privacy-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.9rem; overflow-x: auto; display: block; }
 .privacy-table th, .privacy-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--color-light-gray); }
-.privacy-table th { background: var(--color-black); color: var(--color-white); font-weight: 600; }
+/* Light mode table headers */
+.privacy-table th { background: #1C1C1C; color: #FFFFFF; font-weight: 600; }
 .privacy-table td { color: var(--color-gray); }
+
+/* Dark mode table headers - use explicit colors to avoid variable conflicts */
+body.dark-mode .privacy-table th {
+  background: #2A2A2A !important;
+  color: #FFFFFF !important;
+}
 
 /* Footer */
 .site-footer { background: var(--color-black); color: rgba(255,255,255,0.7); padding: 60px 0 30px; }
@@ -517,8 +524,8 @@ body.dark-mode .social-icon svg { fill: #FFFFFF !important; }
   }
 
   body.dark-mode .privacy-table th {
-    background: #FFFFFF !important;
-    color: #1C1C1C !important;
+    background: #2A2A2A !important;
+    color: #FFFFFF !important;
   }
 
   body.dark-mode .privacy-table td {
@@ -646,9 +653,8 @@ body.dark-mode .contact-info-value {
   color: rgba(255,255,255,0.7) !important;
 }
 
-/* Dark mode privacy table */
-body.dark-mode .privacy-table th { background: var(--color-white); color: #1C1C1C; }
-body.dark-mode .privacy-table td { border-bottom-color: rgba(255,255,255,0.06); }
+/* Dark mode privacy table - already handled above with explicit colors */
+body.dark-mode .privacy-table td { border-bottom-color: rgba(255, 255, 255, 0.06) !important; color: rgba(255, 255, 255, 0.9) !important; }
 
 /* Dark mode divider */
 body.dark-mode hr { background: rgba(255,255,255,0.06) !important; }
