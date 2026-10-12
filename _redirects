@@ -1,6 +1,21 @@
-# Redirect 301: vecchie pagine -> nuove pagine (Cloudflare Pages)
+# Redirect 301: vecchie pagine del sito -> nuove pagine (Cloudflare Pages)
+#
+# NOTA: il redirect tra host (drivenbylight.it -> www.drivenbylight.it) NON
+# si puo' fare qui: i file _redirects di Cloudflare Pages non supportano i
+# redirect a livello di dominio. Si configura in dashboard con Bulk Redirects.
+#
+# L'ordine conta: le regole statiche stanno prima di quelle dinamiche.
+
+# Pagine con estensione .html del vecchio sito statico
 /index.html      /            301
+/index           /            301
 /chi-sono.html   /chi-sono/   301
 /contatti.html   /contatti/   301
 /gallery.html    /portfolio/  301
 /privacy.html    /privacy/    301
+
+# "gallery" era la vecchia galleria: oggi e' /portfolio/.
+# Senza queste regole /gallery viene servito come soft-404 (HTTP 200 = home)
+# e Google lo indicizza come duplicato della home.
+/gallery         /portfolio/  301
+/gallery/        /portfolio/  301

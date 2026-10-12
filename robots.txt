@@ -2,9 +2,10 @@
 User-agent: *
 Allow: /
 
-# Esclude query parameters e cartelle interne
+# Esclude query parameters, cartelle interne e asset originali non ottimizzati
 Disallow: /*?*
 Disallow: /.git/
+Disallow: /brand_assets/
 
 # Sitemap
 Sitemap: https://www.drivenbylight.it/sitemap.xml
@@ -13,9 +14,11 @@ Sitemap: https://www.drivenbylight.it/sitemap.xml
 User-agent: Googlebot
 Allow: /
 Image-index: allow
+Disallow: /brand_assets/
 Sitemap: https://www.drivenbylight.it/sitemap.xml
 
 # Bingbot
 User-agent: Bingbot
 Allow: /
+Disallow: /brand_assets/
 Sitemap: https://www.drivenbylight.it/sitemap.xml

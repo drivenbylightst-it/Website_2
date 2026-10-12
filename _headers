@@ -1,0 +1,12 @@
+# Intestazioni HTTP aggiuntive (Cloudflare Pages)
+# Il file non viene servito: viene interpretato da Pages e applicato alle
+# risposte degli asset statici che corrispondono al pattern.
+
+# Asset originali a piena risoluzione: presenti nel repo di deploy ma non
+# usati dal sito. Si tengono fuori dall'indice (web e immagini).
+/brand_assets/*
+  X-Robots-Tag: noindex, nofollow, noimageindex
+
+# Cartella git, nel caso venisse servita
+/.git/*
+  X-Robots-Tag: noindex, nofollow
